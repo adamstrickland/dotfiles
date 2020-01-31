@@ -1,0 +1,6 @@
+machine api.heroku.com
+  login adam.strickland@gmail.com
+  password a141eea3-dbb4-4816-bad6-017553606b4b
+machine git.heroku.com
+  login adam.strickland@gmail.com
+  password a141eea3-dbb4-4816-bad6-017553606b4b

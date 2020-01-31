@@ -1,0 +1,112 @@
+# Shell
+alias lc="colorls --gs --sd"
+alias llc="lc -la"
+alias ls="ls -GF"
+alias ll="ls -lh"
+alias la="ls -a"
+alias lll="la -l"
+alias md="mkdir -p"
+alias rd="rmdir"
+alias cd..="cd .."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ps="ps aux"
+alias psg="ps | grep"
+alias h="history"
+alias hgr="h | grep"
+alias vi="vim"
+alias e="vim"
+
+# Tmux
+alias tml="tmux ls"
+alias tmn="tmux new -s"
+alias tma="tmux attach -t"
+
+# Git
+export GLOD_FORMAT="%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s"
+alias ga="git add"
+alias gap="ga -p"
+alias gb="git branch"
+alias gc="git commit -v"
+alias gca="gc -a"
+alias gcan="gc --amend --no-edit"
+alias gci="gc -m"
+alias gcp="git cherry-pick"
+alias gd="git diff --color-words"
+alias gdc="gd --cached"
+alias gdh="gd HEAD"
+alias gf="git fetch"
+# alias gg="git log --graph --pretty='%Cgreen%h%Creset%Cblue%d%Creset %Cred%an%Creset: %s'"
+# alias gg="git log --graph --pretty='$GLOD_FORMAT'"
+alias glod="gg --pretty='$GLOD_FORMAT'"
+alias gl="git pull"
+alias glr="gl --rebase"
+alias gg="git log --graph"
+alias gnap="ga -N . && git add -p"
+alias gp="git push"
+alias gph="gp heroku"
+alias gphm="gph master"
+alias gpo="gp origin"
+alias gpom="gpo master"
+git_push_origin_branch () {
+  gpo $(git_prompt_info '%s')
+}
+alias gpob=git_push_origin_branch
+alias gpr="glr"
+alias gps="gp -u"
+alias gpum="gl upstream master --rebase"
+alias gr="git rebase"
+alias grc="gr --continue"
+alias gri="gr --interactive"
+alias gra="gr --abort"
+alias gst="git status"
+alias reset-authors="gc --amend --reset-author -C HEAD"
+
+# Infrastructure
+alias ap="ansible-playbook"
+alias agx="ansible-galaxy"
+alias av="ansible-vault"
+
+# docker
+alias dc="docker-compose"
+alias dcu="dc up"
+alias dcp="dc ps"
+alias dcg="dcp | grep"
+
+# Ruby/Rails
+alias be="bundle exec"
+alias rrg="rake routes | grep $@"
+alias rc="be rails console"
+alias rs="be rails server"
+alias guard="guard --no-bundler-warning"
+
+# JavaScript
+alias nom="rm -rf node_modules && npm cache clear && npm install"
+alias bom="rm -rf bower_components && bower cache clean && bower install"
+
+# Other
+alias aliases="cat ~/dotfiles/.aliases"
+alias mux=tmuxinator
+
+em () {
+  xprop -name emacs >/dev/null 2>/dev/null
+  if [ "$?" = "1" ]; then
+      emacsclient -c -a "" "$@"
+  else
+      emacsclient -a "" "$@"
+  fi
+}
+alias e='em'
+
+pkill () {
+  lsof -nP -i4TCP:$1 | grep LISTEN | cut -f 2 -d ' ' | xargs kill -9
+}
+alias beg="be guard"
+alias gG="guard -G ./.Guardfile --no-bundler-warning"
+
+alias uuid="ruby -r securerandom -e 'puts SecureRandom.uuid'"
+alias gh="git config --get remote.origin.url | ruby -ne \"puts %{https://github.com/#{$_.split(/.com[\:\/]/)[-1].gsub('.git','')}}\" | xargs open"
+
+

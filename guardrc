@@ -1,0 +1,16 @@
+Pry::Commands.create_command "feature-specs", requires_gem: ["guard-rspec"] do
+  description "Run acceptance/feature/system specs"
+
+  def process
+    output.puts "Running: spec/acceptance spec/features spec/system"
+
+    paths = %w[acceptance
+               features
+               system].map do |d|
+      "spec/#{d}"
+    end
+
+    guard_rspec_plugin = Guard.state.session.plugins.all("rspec").first
+    guard_rspec_plugin.runner.run(paths)
+  end
+end

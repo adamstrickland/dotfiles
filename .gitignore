@@ -1,0 +1,10 @@
+FILES
+/.vim/.swp
+/.vim/sessions
+*.log
+.vimbundles/*
+.env.development.local
+.tmux/**
+gemrc.local
+!bundle/cache/.gitkeep
+bundle/cache
