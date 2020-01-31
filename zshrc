@@ -118,6 +118,9 @@ source ~/.zshenv
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+source ~/.zshrc.user
+
+# Local configuration
 source ~/.zshrc.local
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -146,18 +149,6 @@ source ~/.zshrc.local
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-
-# asdf
-# source $HOME/.asdf/asdf.sh
-# source $HOME/.asdf/completions/asdf.bash
-
-
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#
-# eval "$(jira --completion-script-bash)"
-
 
 if [[ ! -z "$DEBUGZSH" ]]; then
   zprof
