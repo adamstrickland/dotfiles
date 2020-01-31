@@ -8,3 +8,4 @@ FILES
 gemrc.local
 !bundle/cache/.gitkeep
 bundle/cache
+*.local
