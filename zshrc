@@ -2,6 +2,19 @@ if [[ ! -z "$DEBUGZSH" ]]; then
   zmodload zsh/zprof
 fi
 
+setopt EXTENDEDGLOB
+autoload -Uz compinit
+for dump in ~/.zcompdump(#qN.m1); do
+  compinit
+
+  if [[ -s "$dump" && (! -s "$dump.zwc" || "$dump" -nt "$dump.zwc") ]]; then
+    zcompile "$dump"
+  fi
+done
+unsetopt EXTENDEDGLOB
+compinit -C
+export ZSH_COMPDUMP=$HOME/.zcompdump
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -91,7 +104,7 @@ plugins=(
   common-aliases
   git
   history
-  last-working-dir
+  # last-working-dir
   # nvm
   osx
   rails
