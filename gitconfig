@@ -79,7 +79,6 @@
 	new = green bold
 	whitespace = red reverse
 [github]
-	oauth-token = a54ff7cc575f0a40a69f9dfd721ffef8bf7214de
 	user = adamstrickland
 [rerere]
 	enabled = true

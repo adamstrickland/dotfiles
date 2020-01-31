@@ -1,11 +1,8 @@
 export SKIP_GLOBAL_COMPINIT=1
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_GITHUB_API_TOKEN=8b7d6ea4127ff179e135cf9e684d9d077bf8e4cb
 
 export HOST_SCHEME=http://127.0.0.1
-export BUGSNAG_API_KEY=553bac4c-fc28-46e1-93f6-34587ab67a17
-export NPM_TOKEN=2e209bc2-7fbf-42c6-966f-c013373395c8
 
 export GOPATH=/Users/adamstrickland/go
 export NVM_DIR="$HOME/.nvm"
@@ -68,3 +65,5 @@ export PATH=$HOME/bin:$PACKAGE_PATHS:/usr/local/bin:/usr/bin:/bin:/usr/local/sbi
 
 # export PATH=/usr/local/opt/mysql-client/bin:$PATH
 # export PATH=/usr/local/opt/elasticsearch@5.6/bin:/Users/adamstrickland/.rvm/gems/ruby-2.5.1@fashionthing/bin:/Users/adamstrickland/.rvm/gems/ruby-2.5.1@global/bin:/Users/adamstrickland/.rvm/rubies/ruby-2.5.1/bin:/Users/adamstrickland/.rvm/bin:/usr/local/opt/node@8/bin:/usr/local/opt/postgresql@9.4/bin:/Users/adamstrickland/.nvm/versions/node/v8.11.3/bin:/usr/local/opt/mysql-client/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/mysql-client/bin:/usr/local/opt/fzf/bin
+
+source ~/.zshenv.local
