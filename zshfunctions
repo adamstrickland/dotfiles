@@ -1,0 +1,20 @@
+portpid () {
+  lsof -nP -i4TCP:$1 | grep LISTEN
+}
+
+portkill () {
+  portpid $1 | awk '{print $2}' | xargs kill -TERM
+}
+
+opensourcedir() {
+  cd ~/src/$1 && git pull origin --rebase && vi
+}
+
+pskill () {
+  psg $1 | grep -v grep | awk '{print $2}' | xargs kill -TERM
+}
+
+function fh() {
+  eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
