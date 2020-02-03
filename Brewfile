@@ -7,67 +7,64 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/versions"
 tap "thoughtbot/formulae"
-cask "java"
-brew "adr-tools"
+tap "d12frosted/emacs-plus"
+
 brew "autoconf"
 brew "automake"
 brew "coreutils"
-brew "libtool"
-brew "libyaml"
 brew "openssl"
 brew "readline"
-brew "unixodbc"
+brew "libffi"
+brew "libiconv"
+brew "libmaxminddb"
+brew "libpq"
+brew "libtool"
+brew "libyaml"
+brew "libunistring"
+brew "libxslt"
+
 brew "asdf"
 brew "bat"
-brew "bison"
-brew "icu4c"
-brew "node", link: false
-brew "bower", link: false
+brew "codeclimate/formulae/codeclimate"
 brew "colordiff"
 brew "cowsay"
 brew "curl"
 brew "go"
 brew "dep"
 brew "diff-so-fancy"
+brew "emacs-plus"
 brew "elixir"
-brew "libffi"
-brew "libunistring"
-brew "emacs"
 brew "entr"
+brew "exa"
 brew "fortune"
 brew "fswatch"
-brew "gcc@4.9"
-brew "gdbm"
-brew "geckodriver"
+brew "fzf"
+brew "fd"
+brew "glances"
 brew "git"
 brew "git-lfs"
-brew "glide"
-brew "pinentry"
 brew "gnupg"
 brew "graphviz"
+brew "heroku/brew/heroku"
+brew "httpie"
 brew "htop"
-brew "hub"
 brew "imagemagick"
 brew "jq"
-brew "leiningen"
-brew "libiconv"
-brew "libmaxminddb"
-brew "libpq"
-brew "libxslt"
 brew "macvim"
 brew "markdown"
 brew "mas"
-brew "memcached", restart_service: true
-brew "nvm"
+brew "ncdu"
 brew "openssl@1.1"
 brew "pcre"
 brew "phantomjs"
+brew "prettyping"
 brew "qt@5.5", link: true
-brew "rabbitmq", restart_service: true
 brew "ripgrep"
+brew "rcm"
 brew "ruby-install"
 brew "the_silver_searcher"
 brew "tig"
+brew "tldr"
 brew "tmate"
 brew "tmux"
 brew "watchman"
@@ -75,53 +72,35 @@ brew "wget"
 brew "yarn", args: ["without-node"]
 brew "zsh"
 brew "zsh-syntax-highlighting"
-brew "codeclimate/formulae/codeclimate"
-brew "heroku/brew/heroku"
-brew "prettyping"
-brew "fzf"
-brew "fd"
-brew "exa"
-brew "httpie"
-brew "glances"
-brew "ncdu"
-brew "tldr"
+
+cask "1password"
 cask "agenda"
-cask "atom"
-cask "cheatsheet"
+cask "alfred"
 cask "chromedriver"
-cask "db-browser-for-sqlite"
+cask "brave-browser"
 cask "docker"
+cask "dropbox"
+cask "fantastical"
 cask "font-droidsansmono-nerd-font"
 cask "font-droidsansmono-nerd-font-mono"
 cask "font-hack-nerd-font"
-cask "github"
-cask "google-chrome"
-cask "iphone-backup-extractor"
 cask "iterm2"
-cask "licecap"
-cask "numi"
-cask "popclip"
-cask "postico"
-cask "sourcetree"
-cask "squidman"
-cask "steam"
+cask "kindle"
+cask "mailplane"
+cask "pandora"
+cask "slack"
+cask "sonos"
+cask "spotify"
+cask "skitch"
+cask "sublime-text"
 cask "tla-plus-toolbox"
 cask "vagrant"
-mas "Airmail 3", id: 918858936
-mas "Bear", id: 1091189122
-mas "Fantastical 2", id: 975937182
-mas "GarageBand", id: 682658836
-mas "Gestimer", id: 990588172
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Kindle", id: 405399194
-mas "Lightshot Screenshot", id: 526298438
+
+mas "Keynote", id: 361285480
 mas "Magnet", id: 441258766
-mas "Memory Clean", id: 451444120
 mas "Numbers", id: 409203825
+mas "OneNote", id: 784801555
 mas "Pages", id: 409201541
-mas "Slack", id: 803453959
-mas "The Unarchiver", id: 425424353
-mas "Trello", id: 1278508951
-mas "Wunderlist", id: 410628904
+max "Pixelmator Pro", id: 1289583905
+mas "Sonos", id: 293523031
 mas "Xcode", id: 497799835
