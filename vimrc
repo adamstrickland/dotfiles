@@ -131,20 +131,6 @@ let g:turbux_command_cucumber="RAILS_ENV=test bin/fig run worker bundle exec cuc
 
 set softtabstop=2 shiftwidth=2 expandtab
 
-if getcwd() != $HOME && getcwd() != $DOTFILES_DIR && getcwd() != expand("$HOME/src/dotfiles")
-  if filereadable(expand('.vimbundle'))
-    let g:pathogen_disabled = []
-    let installed_plugins= split(system("ls -1 ~/.vimbundles/ | awk -F'/' '{print $NF}'"), '\n')
-    let project_plugins= split(system("cat '.vimbundle' | awk -F'/' '{print $NF}'"), '\n')
-    " reconcile the differences and disable those not contained in the project
-    for plugin in installed_plugins
-      if index(project_plugins, plugin) == -1
-        call add(g:pathogen_disabled, plugin)
-      endif
-    endfor
-  endif
-endif
-
 colorscheme Tomorrow-Night-Eighties
 
 if filereadable(expand('~/.vimrc.local'))
