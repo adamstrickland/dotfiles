@@ -1,3 +1,8 @@
+runtime! autoload/plug.vim
+
+" package management
+call plug#begin('~/.vim/bundle')
+
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Rykka/lastbuf.vim'
 Plug 'Shougo/neocomplete.vim'
@@ -69,3 +74,6 @@ Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
 Plug 'xolox/vim-session'
+
+call plug#end()
+
