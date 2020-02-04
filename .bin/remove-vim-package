@@ -1,0 +1,8 @@
+if pwd != "~/.dotfiles"; then
+  exit "This needs to be run from ~/.dotfiles"
+fi
+
+git submodule deinit vim/pack/packages/start/$1
+git rm vim/pack/packages/start/$1
+rm -Rf .git/modules/vim/pack/packages/start/$1
+git commit

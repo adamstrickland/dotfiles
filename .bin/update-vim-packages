@@ -1,0 +1,6 @@
+if pwd != "~/.dotfiles"; then
+  exit "This needs to be run from ~/.dotfiles"
+fi
+
+git submodule update --remote --merge
+git commit
