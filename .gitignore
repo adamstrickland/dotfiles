@@ -9,3 +9,6 @@ gemrc.local
 !bundle/cache/.gitkeep
 bundle/cache
 *.local
+vim/bundle
+vim/sessions
+

@@ -1,4 +1,4 @@
-runtime! autoload/pathogen.vim
+runtime! autoload/plug.vim
 
 syntax on
 filetype plugin indent on
@@ -68,19 +68,6 @@ nnoremap <Leader>j :%!cat % <bar> jq '.'<CR>
 " imap <f6> <esc> <f6>
 " map <f7> :w \| :call system("tmux resize -t1 -y40")<cr>
 " imap <f7> <esc> <f7>
-nmap tc :w<cr>:call RunCurrentSpecFile()<CR>
-nmap tl :w<cr>:call RunLastSpec()<CR>
-nmap ta :w<cr>:call RunAllSpecs()<CR>
-nmap <f5> ta
-let g:rspec_command = "Dispatch bundle exec rspec {spec}"
-
-" ignore ruby warnings in Syntastic
-let g:syntastic_ruby_mri_args="-T1 -c"
-
-" syntax highlighting for .ejs and .hamlc
-au BufNewFile,BufRead *.ejs set filetype=html
-au BufNewFile,BufRead *.hamlc set filetype=html
-let g:jsx_ext_required = 0
 
 " Better search behavior
 set hlsearch
@@ -97,6 +84,11 @@ set scrolloff=5
 " This uses Ack.vim to search for the word under the cursor
 nnoremap <leader><bs> :Ag! '\b<c-r><c-w>\b'<cr>
 nnoremap <leader>a :Ag
+
+" package management
+call plug#begin('~/.vim/bundle')
+source ~/.vim/config/bundles
+call plug#end()
 
 " NERDTree configuration
 " autocmd StdinReadPre * let s:std_in=1
@@ -153,10 +145,6 @@ function! s:Repl()
   return "p@=RestoreRegister()\<cr>"
 endfunction
 vmap <silent> <expr> p <sid>Repl()
-
-if exists('g:loaded_pathogen')
-  execute pathogen#infect('~/.vimbundles/{}')
-endif
 
 " toggle quickfix with <Leader> c
 let g:toggle_list_no_mappings=1
@@ -219,6 +207,19 @@ set pastetoggle=<F2>
 " Plugin 'elixir-lang/vim-elixir'
 " call vundle#end()
 " filetype plugin indent on
+nmap tc :w<cr>:call RunCurrentSpecFile()<CR>
+nmap tl :w<cr>:call RunLastSpec()<CR>
+nmap ta :w<cr>:call RunAllSpecs()<CR>
+nmap <f5> ta
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
+" ignore ruby warnings in Syntastic
+let g:syntastic_ruby_mri_args="-T1 -c"
+
+" syntax highlighting for .ejs and .hamlc
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.hamlc set filetype=html
+let g:jsx_ext_required = 0
 
 " autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 augroup markdown
