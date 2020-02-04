@@ -105,7 +105,7 @@ fi
 
 fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
-brew bundle --file=./Brewfile.base
+brew bundle --file=./var/Brewfile.base
 
 fancy_echo "Update heroku binary ..."
 brew unlink heroku
@@ -165,4 +165,4 @@ if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
 fi
 
-brew bundle --file=./Brewfile.extended
+brew bundle --file=./var/Brewfile.extended
