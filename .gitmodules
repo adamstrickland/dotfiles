@@ -1,0 +1,222 @@
+[submodule "vim/pack/packages/start/splitjoin.vim"]
+	path = vim/pack/packages/start/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim
+[submodule "vim/pack/packages/start/vim-bufonly"]
+	path = vim/pack/packages/start/vim-bufonly
+	url = https://github.com/duff/vim-bufonly
+[submodule "vim/pack/packages/start/supertab"]
+	path = vim/pack/packages/start/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "vim/pack/packages/start/tabular"]
+	path = vim/pack/packages/start/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "vim/pack/packages/start/ack.vim"]
+	path = vim/pack/packages/start/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "vim/pack/packages/start/vim-abolish"]
+	path = vim/pack/packages/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "vim/pack/packages/start/vim-bundler"]
+	path = vim/pack/packages/start/vim-bundler
+	url = https://github.com/tpope/vim-bundler
+[submodule "vim/pack/packages/start/vim-commentary"]
+	path = vim/pack/packages/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim/pack/packages/start/vim-endwise"]
+	path = vim/pack/packages/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim/pack/packages/start/vim-eunuch"]
+	path = vim/pack/packages/start/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch
+[submodule "vim/pack/packages/start/vim-fugitive"]
+	path = vim/pack/packages/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/packages/start/vim-git"]
+	path = vim/pack/packages/start/vim-git
+	url = https://github.com/tpope/vim-git
+[submodule "vim/pack/packages/start/vim-pathogen"]
+	path = vim/pack/packages/start/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen
+[submodule "vim/pack/packages/start/vim-ragtag"]
+	path = vim/pack/packages/start/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag
+[submodule "vim/pack/packages/start/vim-repeat"]
+	path = vim/pack/packages/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "vim/pack/packages/start/vim-rsi"]
+	path = vim/pack/packages/start/vim-rsi
+	url = https://github.com/tpope/vim-rsi
+[submodule "vim/pack/packages/start/vim-sensible"]
+	path = vim/pack/packages/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "vim/pack/packages/start/vim-speeddating"]
+	path = vim/pack/packages/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
+[submodule "vim/pack/packages/start/vim-surround"]
+	path = vim/pack/packages/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/pack/packages/start/vim-unimpaired"]
+	path = vim/pack/packages/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/pack/packages/start/vim-vinegar"]
+	path = vim/pack/packages/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar
+[submodule "vim/pack/packages/start/bufkill.vim"]
+	path = vim/pack/packages/start/bufkill.vim
+	url = https://github.com/vim-scripts/bufkill.vim
+[submodule "vim/pack/packages/start/bufexplorer.zip"]
+	path = vim/pack/packages/start/bufexplorer.zip
+	url = https://github.com/vim-scripts/bufexplorer.zip
+[submodule "vim/pack/packages/start/tslime.vim"]
+	path = vim/pack/packages/start/tslime.vim
+	url = https://github.com/jgdavey/tslime.vim
+[submodule "vim/pack/packages/start/vim-spacejam"]
+	path = vim/pack/packages/start/vim-spacejam
+	url = https://github.com/rondale-sc/vim-spacejam
+[submodule "vim/pack/packages/start/vim-dispatch"]
+	path = vim/pack/packages/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "vim/pack/packages/start/vim-togglelist"]
+	path = vim/pack/packages/start/vim-togglelist
+	url = https://github.com/milkypostman/vim-togglelist
+[submodule "vim/pack/packages/start/vim-tmux-navigator"]
+	path = vim/pack/packages/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "vim/pack/packages/start/syntastic"]
+	path = vim/pack/packages/start/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "vim/pack/packages/start/IndexedSearch"]
+	path = vim/pack/packages/start/IndexedSearch
+	url = https://github.com/vim-scripts/IndexedSearch
+[submodule "vim/pack/packages/start/vim-seek"]
+	path = vim/pack/packages/start/vim-seek
+	url = https://github.com/goldfeld/vim-seek
+[submodule "vim/pack/packages/start/vim-textobj-user"]
+	path = vim/pack/packages/start/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user
+[submodule "vim/pack/packages/start/lastbuf.vim"]
+	path = vim/pack/packages/start/lastbuf.vim
+	url = https://github.com/Rykka/lastbuf.vim
+[submodule "vim/pack/packages/start/vim-colors-solarized"]
+	path = vim/pack/packages/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/pack/packages/start/ctrlp.vim"]
+	path = vim/pack/packages/start/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "vim/pack/packages/start/nerdtree"]
+	path = vim/pack/packages/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/packages/start/ag.vim"]
+	path = vim/pack/packages/start/ag.vim
+	url = https://github.com/rking/ag.vim
+[submodule "vim/pack/packages/start/vim-airline"]
+	path = vim/pack/packages/start/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "vim/pack/packages/start/vim-coffee-script"]
+	path = vim/pack/packages/start/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule "vim/pack/packages/start/vim-json"]
+	path = vim/pack/packages/start/vim-json
+	url = https://github.com/leshill/vim-json
+[submodule "vim/pack/packages/start/vim-javascript"]
+	path = vim/pack/packages/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "vim/pack/packages/start/vim-cucumber"]
+	path = vim/pack/packages/start/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber
+[submodule "vim/pack/packages/start/vim-haml"]
+	path = vim/pack/packages/start/vim-haml
+	url = https://github.com/tpope/vim-haml
+[submodule "vim/pack/packages/start/vim-markdown"]
+	path = vim/pack/packages/start/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "vim/pack/packages/start/vim-rake"]
+	path = vim/pack/packages/start/vim-rake
+	url = https://github.com/tpope/vim-rake
+[submodule "vim/pack/packages/start/vim-rails"]
+	path = vim/pack/packages/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim/pack/packages/start/vim-ruby"]
+	path = vim/pack/packages/start/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "vim/pack/packages/start/vim-blockle"]
+	path = vim/pack/packages/start/vim-blockle
+	url = https://github.com/jgdavey/vim-blockle
+[submodule "vim/pack/packages/start/vim-turbux"]
+	path = vim/pack/packages/start/vim-turbux
+	url = https://github.com/jgdavey/vim-turbux
+[submodule "vim/pack/packages/start/vim-weefactor"]
+	path = vim/pack/packages/start/vim-weefactor
+	url = https://github.com/jgdavey/vim-weefactor
+[submodule "vim/pack/packages/start/vim-textobj-rubyblock"]
+	path = vim/pack/packages/start/vim-textobj-rubyblock
+	url = https://github.com/nelstrom/vim-textobj-rubyblock
+[submodule "vim/pack/packages/start/vim-mustache-handlebars"]
+	path = vim/pack/packages/start/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
+[submodule "vim/pack/packages/start/vim-elixir"]
+	path = vim/pack/packages/start/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
+[submodule "vim/pack/packages/start/Dockerfile.vim"]
+	path = vim/pack/packages/start/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "vim/pack/packages/start/vim-jsx"]
+	path = vim/pack/packages/start/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule "vim/pack/packages/start/vim-misc"]
+	path = vim/pack/packages/start/vim-misc
+	url = https://github.com/xolox/vim-misc
+[submodule "vim/pack/packages/start/vim-notes"]
+	path = vim/pack/packages/start/vim-notes
+	url = https://github.com/xolox/vim-notes
+[submodule "vim/pack/packages/start/vim-session"]
+	path = vim/pack/packages/start/vim-session
+	url = https://github.com/xolox/vim-session
+[submodule "vim/pack/packages/start/vim-instant-markdown"]
+	path = vim/pack/packages/start/vim-instant-markdown
+	url = https://github.com/suan/vim-instant-markdown
+[submodule "vim/pack/packages/start/vim-flavored-markdown"]
+	path = vim/pack/packages/start/vim-flavored-markdown
+	url = https://github.com/jtratner/vim-flavored-markdown
+[submodule "vim/pack/packages/start/vim-arduino-ino"]
+	path = vim/pack/packages/start/vim-arduino-ino
+	url = https://github.com/jplaut/vim-arduino-ino
+[submodule "vim/pack/packages/start/vim-go"]
+	path = vim/pack/packages/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "vim/pack/packages/start/molokai"]
+	path = vim/pack/packages/start/molokai
+	url = https://github.com/fatih/molokai
+[submodule "vim/pack/packages/start/neocomplete.vim"]
+	path = vim/pack/packages/start/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim
+[submodule "vim/pack/packages/start/tagbar"]
+	path = vim/pack/packages/start/tagbar
+	url = https://github.com/majutsushi/tagbar
+[submodule "vim/pack/packages/start/go-explorer"]
+	path = vim/pack/packages/start/go-explorer
+	url = https://github.com/garyburd/go-explorer
+[submodule "vim/pack/packages/start/loremipsum"]
+	path = vim/pack/packages/start/loremipsum
+	url = https://github.com/vim-scripts/loremipsum
+[submodule "vim/pack/packages/start/webapi-vim"]
+	path = vim/pack/packages/start/webapi-vim
+	url = https://github.com/mattn/webapi-vim
+[submodule "vim/pack/packages/start/gist-vim"]
+	path = vim/pack/packages/start/gist-vim
+	url = https://github.com/mattn/gist-vim
+[submodule "vim/pack/packages/start/vim-scala"]
+	path = vim/pack/packages/start/vim-scala
+	url = https://github.com/derekwyatt/vim-scala
+[submodule "vim/pack/packages/start/vim-rspec"]
+	path = vim/pack/packages/start/vim-rspec
+	url = https://github.com/thoughtbot/vim-rspec
+[submodule "vim/pack/packages/start/vim-prettier"]
+	path = vim/pack/packages/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier
+[submodule "vim/pack/packages/start/ale"]
+	path = vim/pack/packages/start/ale
+	url = https://github.com/w0rp/ale
+[submodule "vim/pack/packages/start/vim-easy-align"]
+	path = vim/pack/packages/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
