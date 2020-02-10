@@ -11,4 +11,5 @@ bundle/cache
 *.local
 vim/bundle
 vim/sessions
-
+netrc
+.netrc
