@@ -13,3 +13,5 @@ vim/bundle
 vim/sessions
 netrc
 .netrc
+gitconfig
+config/**/*
