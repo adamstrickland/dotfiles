@@ -40,8 +40,10 @@ nnoremap <leader><bs> :Ag! '\b<c-r><c-w>\b'<cr>
 nnoremap <leader>a :Ag
 
 " Nerdtree
-map <Leader>n :NERDTreeToggle<CR>
-map <Leader>fnt :NERDTreeFind<CR>
+map <Leader>nn :NERDTreeToggle<CR>
+map <leader>ng :NERDTreeFocus<CR>
+map <Leader>nf :NERDTreeFind<CR>
+map <Leader>nr :let g:NERDTreeWinSize=31<CR>:NERDTreeClose<CR>:NERDTreeToggle<CR>AA
 
 " BufExplorer
 noremap <leader>bb :BufExplorer<CR>
