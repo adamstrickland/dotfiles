@@ -13,12 +13,14 @@ Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
 Plug 'duff/vim-bufonly'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'docker' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+Plug 'elmcast/elm-vim', { 'for': 'elm' }
 Plug 'ervandew/supertab'
 Plug 'fatih/molokai'
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'garyburd/go-explorer', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'goldfeld/vim-seek'
+Plug 'hashivim/vim-terraform'
 Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
@@ -34,7 +36,7 @@ Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mileszs/ack.vim'
 Plug 'milkypostman/vim-togglelist'
-Plug 'mtth/scratch'
+" Plug 'mtth/scratch'
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }

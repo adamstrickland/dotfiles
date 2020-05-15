@@ -19,7 +19,7 @@ export ZSH_COMPDUMP=$HOME/.zcompdump
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adamstrickland/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir vcs)
@@ -166,3 +166,5 @@ source ~/.zshrc.local
 if [[ ! -z "$DEBUGZSH" ]]; then
   zprof
 fi
+
+
