@@ -121,14 +121,13 @@ plugins=(
 )
 
 # ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_ITERM2=true
-ZSH_DISABLE_COMPFIX=true
+ZSH_TMUX_ITERM2="true"
+ZSH_DISABLE_COMPFIX="true"
 
 UNBUNDLED_COMMANDS=(
   guard
 )
 
-source ~/.zshenv
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
