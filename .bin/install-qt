@@ -1,0 +1,11 @@
+cd $( brew --prefix )/Homebrew/Library/Taps/homebrew/homebrew-core
+
+# below is the last commit containing qt@5.5 with homebrew
+git checkout 9ba3d6ef8891e5c15dbdc9333f857b13711d4e97 Formula/qt@5.5.rb
+
+# fix the file
+~/.dotfiles/.bin/fix-qt
+
+# here is where the error occurs
+brew install qt@5.5
+

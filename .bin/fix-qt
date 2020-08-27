@@ -1,0 +1,2 @@
+# fix the file
+sed -i.tmp 's/\(depends_on :macos => :mountain_lion\)/# \1/g' $(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/qt@5.5.rb
