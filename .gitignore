@@ -18,3 +18,4 @@ netrc
 .netrc
 
 config/**/*
+yarnrc
