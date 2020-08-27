@@ -111,6 +111,7 @@ plugins=(
   ruby
   sudo
   # sublime
+  terraform
   tig
   tmux
   tmuxinator
