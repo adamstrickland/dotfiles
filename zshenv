@@ -20,7 +20,8 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 export EDITOR=vim
 
 export BREW_PATH=/usr/local/opt
-export FZF_PATH=$(brew --prefix fzf 2>/dev/null)
+
+export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that call is very slow
 export ASDF_PATH=$HOME/.asdf
 export ASDF_DIR=$ASDF_PATH
 
