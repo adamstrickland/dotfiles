@@ -41,7 +41,8 @@ POWERLEVEL9K_BATTERY_ICON='\UF1E6'
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="powerlevel9k/powerlevel9k"
-ZSH_THEME="af-magic"
+# ZSH_THEME="af-magic"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
