@@ -129,7 +129,6 @@ UNBUNDLED_COMMANDS=(
   guard
 )
 
-# source ~/.zshenv
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
