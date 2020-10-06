@@ -46,7 +46,7 @@ set undodir=.undone/,~/.undo/,/tmp//
 :nmap , \
 
 " colorscheme Tomorrow-Night-Eighties
-colorscheme dracula
+" colorscheme dracula
 
 
 

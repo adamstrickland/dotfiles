@@ -15,3 +15,4 @@ source ~/.vim/config/keymappings.vim
 " ../after/ftplugin/FILETYPE.vim
 source ~/.vim/config/autogroups.vim
 
+colorscheme dracula

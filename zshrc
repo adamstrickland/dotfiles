@@ -108,7 +108,7 @@ plugins=(
   # last-working-dir
   # nvm
   osx
-  rails
+  # rails
   ruby
   sudo
   # sublime
