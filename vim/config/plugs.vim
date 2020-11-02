@@ -2,6 +2,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Rykka/lastbuf.vim'
 Plug 'Shougo/neocomplete.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'benmills/vimux'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'derekwyatt/vim-scala', { 'for': 'scala' }
@@ -16,12 +17,14 @@ Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'garyburd/go-explorer', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'goldfeld/vim-seek'
+Plug 'greghor/vim-pyShell'
 Plug 'hashivim/vim-terraform'
 Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
 Plug 'jgdavey/vim-turbux'
 Plug 'jgdavey/vim-weefactor'
 Plug 'jtratner/vim-flavored-markdown'
+Plug 'julienr/vim-cellmode'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
