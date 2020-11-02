@@ -21,3 +21,4 @@ FILES
 .#*
 
 .data/**/*
+.ignore
