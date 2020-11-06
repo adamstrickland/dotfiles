@@ -34,3 +34,4 @@ alias tfi='tf init'
 alias tfp='tf plan'
 alias top='sudo htop'
 alias vi="vim"
+alias ye=yarn exec
