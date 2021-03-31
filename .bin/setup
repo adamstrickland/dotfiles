@@ -1,6 +1,11 @@
 #!/bin/sh
 
+xcode-select --install
+
 mkdir -p ~/tmp
-curl --remote-name https://raw.githubusercontetn.com/thoughtbot/laptop/master/mac >> ~/tmp/mac
-sh ~/mac 2>&1 | tee ~/laptop.log
-less ~/laptop.log
+
+curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac >> ~/tmp/mac
+
+sh ~/tmp/mac 2>&1 | tee ~/tmp/laptop.log
+
+less ~/tmp/laptop.log
