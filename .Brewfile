@@ -63,6 +63,7 @@ brew "prettyping"
 brew "redis"
 brew "ripgrep"
 brew "ruby-install"
+brew "svn"
 brew "terraform"
 brew "tfenv"
 brew "tig"
@@ -78,7 +79,7 @@ cask "alfred"
 cask "anaconda"
 cask "atom"
 cask "brave-browser"
-cask "google-chrome"
+# cask "google-chrome"
 cask "chromedriver"
 cask "docker"
 cask "dropbox"
@@ -103,13 +104,13 @@ cask "sublime-text"
 cask "tla-plus-toolbox"
 cask "vagrant"
 cask "visual-studio-code"
-cask "zoom"
+# cask "zoom"
 
 mas "Bear",                     id: 1091189122
 mas "Developer",                id: 640199958
-mas "Garage Band",              id: 682658836
+# mas "Garage Band",              id: 682658836
 mas "Gestimer",                 id: 990588172
-mas "Keynote",                  id: 361285480
+# mas "Keynote",                  id: 361285480
 mas "Magnet",                   id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode",                 id: 1289197285
@@ -118,8 +119,8 @@ mas "OneNote",                  id: 784801555
 mas "Pages",                    id: 409201541
 mas "Pixelmator Pro",           id: 1289583905
 mas "Playgrounds",              id: 1496833156
-mas "Sonos",                    id: 293523031
+# mas "Sonos",                    id: 293523031
 mas "Todoist",                  id: 585829637
-mas "Transporter",              id: 145087484
+# mas "Transporter",              id: 145087484
 mas "Pages",                    id: 409201541
 mas "Xcode",                    id: 497799835

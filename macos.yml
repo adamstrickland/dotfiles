@@ -1,0 +1,167 @@
+system_preferences:
+  apple_id:
+    use_icloud: true
+    find_my_mac: allow
+    apps_on_this_mac_using_icloud:
+      unclick:
+        - mail
+        - contacts
+        - calendars
+        - safari
+        - siri
+        - news
+        - stocks
+        - home
+    icloud_drive:
+      options:
+        documents:
+          click:
+            - desktop & documents folders
+          unclick:
+            - quicktime player
+            - mail
+            - weather
+    media_and_purchases: use touch id for purchases
+  general:
+    appearance: dark
+    default_web_browser: google chrome
+  dock:
+    size: .2
+    magnification:
+      on: true
+      size: .6
+  language_and_region:
+    general:
+      time_format:
+        24_hour_time: true
+      advanced:
+        dates:
+          short: 1-Jun
+          medium: 2021-06-01
+          long: 2021-June-01
+          full: Tue 2021-June-01
+  notifications:
+    calendar:
+      allow_notifications: false
+  internet_accounts:
+    astrickland@bonobos.com:
+      calendars: true
+      details:
+        description: Bonobos
+    adam.strickland@gmail.com:
+      mail: true
+      contacts: true
+      calendars: true
+      notes: true
+      details:
+        description: Personal Gmail
+  touch_id:
+    fingerprints: 2
+  users_and_groups:
+    Adam Strickland:
+      login_items:
+        - Magnet
+        - Alfred 4
+        - Mailplane
+  security_and_privacy:
+    privacy:
+      accessibility:
+        - Alfred 4
+        - Magnet
+        - Pock
+        - iTerm
+      contacts:
+        - Alfred 4
+      full_disk_access:
+        - Alfred 4
+        - Pock
+  keyboard:
+    keyboard:
+      modifier_keys:
+        caps_lock: ^ Control
+    shortcuts:
+      use_keyboard_navigation_to_move_focus_betwen_controls: on
+  trackpad:
+    more_gestures:
+      swipe_between_pages: 
+        status: on
+        gesture: swipe with three fingers
+      swipe_between_full-screen_apps: 
+        status: on
+        gesture: swipe left or right with four fingers
+      app_expose: 
+        status: on
+        gesture: swipe_down_with_three_fingers
+  energy_saver:
+    automatic_graphics_switching: on
+    battery:
+      turn_display_off_after: 15 min
+    power_adapter:
+      turn_display_off_after: 1 hr
+  date_and_time:
+    clock:
+      date_options:
+        show_date: on
+
+applications:
+  - 1Password:
+      1Password.com:
+        Bonobos:
+          add: true
+        strickland:
+          add: true
+  - Alfred 4:
+      email_address:
+      license_code:
+      alfred_hotkey: Option+`
+      where_are_you: United States
+  - iTerm2:
+      preferences:
+        general:
+          selection:
+            applications_in_terminal_may_access_clipboard: true
+        profiles:
+          Default:
+            text:
+              font:
+                face: DroidSansMono Nerd Font Mono
+                family: Book
+                size: 10
+        keys:
+          key_bindings:
+            - entry:
+                keyboard_shortcut: Option+LeftArrow
+                action: send escape sequence
+                esc_plus: b
+            - entry:
+                keyboard_shortcut: Option+RightArrow
+                action: send escape sequence
+                esc_plus: f
+
+dock:
+  items:
+    - iterm
+    - xcode
+    - mailplane
+    - slack
+    - zoom
+    - messages
+    - postman
+    - todoist
+    - bear
+    - agenda
+    - onenote
+    - reminders
+    - sublime
+    - skitch
+    - 1password
+    - mindnode
+    - spotify
+    - system preferences
+
+command: mkdir ~/src
+
+finder:
+  favorites:
+    - ~/src
+    - ~
