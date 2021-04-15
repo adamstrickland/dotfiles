@@ -1,0 +1,85 @@
+---
+
+~/src/personal/aegis:
+  aegis-ios: adamstrickland/aegis-ios
+  aegis-dispatch-ui: adamstrickland/aegis-dispatch-ui
+  aegis-dispatch-service: adamstrickland/aegis-dispatch-service
+  aegis-dispatch-brain: adamstrickland/aegis-dispatch-brain
+  aegis-dispatch-notifier: adamstrickland/aegis-dispatch-notifier
+  aegis-infrastructure: adamstrickland/aegis-infrastructure
+  leatherman: adamstrickland/leatherman
+
+~/src/personal:
+  delivery_boy: adamstrickland/delivery_boy
+  dotfiles: adamstrickland/dotfiles
+  gnosis: adamstrickland/gnosis
+  harbinger: adamstrickland/harbinger
+  pact-broker-docker: adamstrickland/pact-broker-docker
+  pact-message-ruby: adamstrickland/pact-message-ruby
+  pragmatic_microservices: adamstrickland/pragmatic_microservices
+  racecar: adamstrickland/racecar
+  react-static: react-static/react-static
+  ReactionTraner: adamstrickland/ReactionTraner
+  sql-formatter: adamstrickland/sql-formatter
+  theabstractfactory.com: adamstrickland/theabstractfactory.com
+  writing: adamstrickland/writing
+
+~/src/bonobos:
+  da3_dbt: bonobos/da3_dbt
+  tribeca: bonobos/tribeca
+  upper_west_side: bonobos/upper_west_side
+  chelsea: bonobos/chelsea
+  dumbo: bonobos/dumbo
+  kanzi: bonobos/kanzi
+  devops: bonobos/devops
+  rockaway: bonobos/rockaway
+  da3_database: bonobos/da3_database
+  EMP-Connector: bonobos/EMP-Connector
+  segment_api: bonobos/segment_api
+  global-retail-integration-infrastructure: bonobos/global-retail-integration-infrastructure
+  three_one_one: bonobos/three_one_one
+  solidus: bonobos/solidus
+  dingo_failures: bonobos/dingo_failures
+  highline: bonobos/highline
+  astoria: bonobos/astoria
+  clienteling_service: bonobos/clienteling_service
+  dingo_broker: bonobos/dingo_broker
+  luigi: bonobos/luigi
+  foobar: bonobos/foobar
+  gramercy: bonobos/gramercy
+  port_authority: bonobos/port_authority
+  deluge: bonobos/deluge
+  old_astoria: bonobos/old_astoria
+  the_count: bonobos/the_count
+  serverless-node-typescript-template: bonobos/serverless-node-typescript-template
+  park_slope: bonobos/park_slope
+  architecture: bonobos/architecture
+  inventory_service: bonobos/inventory_service
+  nomad: bonobos/nomad
+  notes: bonobos/notes
+  eng-infrastructure: bonobos/eng-infrastructure
+  pantalytics: bonobos/pantalytics
+  load_testing: bonobos/load_testing
+  kips_bay: bonobos/kips_bay
+  port_authority_bak: bonobos/port_authority_bak
+  jack: bonobos/jack
+  data_registry: bonobos/data_registry
+  dingo: bonobos/dingo
+  flatiron: bonobos/flatiron
+  pvc: bonobos/pvc
+  deg_infrastructure: bonobos/deg_infrastructure
+  cockroach: bonobos/cockroach
+  noho: bonobos/noho
+  the_battery: bonobos/the_battery
+  simparel_api: bonobos/simparel_api
+  ecommerce_events: bonobos/ecommerce_events
+  customer_dna: bonobos/customer_dna
+  data-sync: bonobos/data-sync
+  hunger_artist: bonobos/hunger_artist
+  fubar: bonobos/fubar
+  da3_docker_base: bonobos/da3_docker_base
+  soho: bonobos/soho
+  pact_broker: bonobos/pact_broker
+  circleci-aws-key-rotation: bonobos/circleci-aws-key-rotation
+  hells_kitchen: bonobos/hells_kitchen
+  upper_east_side: bonobos/upper_east_side

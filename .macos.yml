@@ -1,0 +1,255 @@
+before:
+  - command: mkdir ~/src
+
+system_preferences:
+  Apple id:
+    Use icloud: 
+      Clicked: true
+    Find my mac: allow
+    Apps on this mac using icloud:
+      Unclick:
+        - mail
+        - contacts
+        - calendars
+        - safari
+        - siri
+        - news
+        - stocks
+        - home
+    Icloud drive:
+      Options:
+        Documents:
+          Click:
+            - desktop & documents folders
+          Unclick:
+            - quicktime player
+            - mail
+            - weather
+    Media and purchases: use touch id for purchases
+  General:
+    Appearance: dark
+    Default web browser: google chrome
+  Dock:
+    Size: .2
+    Magnification:
+      On: true
+      Size: .6
+  Language and region:
+    General:
+      Time format:
+        24 hour time: 
+          Clicked: true
+      Advanced:
+        Dates:
+          Short: 1-Jun
+          Medium: 2021-06-01
+          Long: 2021-June-01
+          Full: Tue 2021-June-01
+  Notifications:
+    Calendar:
+      Allow notifications: false
+  Internet accounts:
+    Astrickland@bonobos.com:
+      Calendars: 
+        Clicked: true
+      Details:
+        Description: Bonobos
+    Adam.strickland@gmail.com:
+      Mail: 
+        Clicked: true
+      Contacts: 
+        Clicked: true
+      Calendars: 
+        Clicked: true
+      Notes: 
+        Clicked: true
+      Details:
+        Description: Personal Gmail
+  Sound:
+    Show volume in menu bar: 
+      Clicked: true
+  Touch id:
+    Fingerprints: 2
+  Users and groups:
+    Adam Strickland:
+      Login items:
+        - Magnet
+        - Alfred 4
+        - Mailplane
+  Security and privacy:
+    Privacy:
+      Accessibility:
+        - Alfred 4
+        - Magnet
+        - Pock
+        - iTerm
+      Contacts:
+        - Alfred 4
+      Full disk access:
+        - Alfred 4
+        - Pock
+  Keyboard:
+    Keyboard:
+      Modifier keys:
+        Caps lock: ^ Control
+    Shortcuts:
+      Use keyboard navigation to move focus betwen controls: on
+  Trackpad:
+    More gestures:
+      Swipe between pages: 
+        Status: on
+        Gesture: swipe with three fingers
+      Swipe between full-screen apps: 
+        Status: on
+        Gesture: swipe left or right with four fingers
+      App expose: 
+        Status: on
+        Gesture: swipe down with three fingers
+  Energy saver:
+    Automatic graphics switching: on
+    Battery:
+      Turn display off after: 15 min
+    Power adapter:
+      Turn display off after: 1 hr
+  Date and time:
+    Clock:
+      Date options:
+        Show date: on
+
+application_settings:
+  Zoom:
+    Preferences:
+      Share Screen:
+        Window size when screen sharing:
+          Maintain current size: 
+            Clicked: true
+  Slack:
+    Preferences:
+      Themes:
+        Dark: 
+          Clicked: true
+        Sync with OS setting: tru
+      "Messages & media":
+        Theme:
+          Compact: 
+            Clicked: true
+        Names:
+          Just display names: 
+            Clicked: true
+        Additional options:
+          Show times with 24-hour clock: 
+            Clicked: true
+        Emoji:
+          Show one-click reactions on messages: 
+            Clicked: true
+            Custom:
+              - ":thumbsup:"
+              - ":woman-shrugging:"
+              - ":eyes:"
+        Advanced:
+          When writing a message, press Enter to...: Start a new line (use ⌘ Enter to send)
+          Other options:
+            Send me occasional surveys via Slackbot:
+              Clicked: false
+
+  1Password:
+    1Password.com:
+      Bonobos:
+        Add: true
+      Strickland:
+        Add: true
+    Preferences:
+      Security:
+        Unlock using:
+          Touch ID:
+            Clicked: false
+        Auto-lock:
+          Lock after computer is idle for _ minutes:
+            Clicked: false
+  Alfred 4:
+    Preferences:
+      General:
+        Alfred Hotkey: Option+`
+        Where are you: United States
+      Powerpack:
+        Email Address: {{ secrets("alfred.email") }}
+        License Code: {{ secrets("alfred.license") }}
+  Zoom:
+    Preferences:
+      Video:
+        My Video:
+          Adjust for low light:
+            Clicked: true
+            Choice: Auto
+          Maximum participants displayed per screen in Gallery View: "49 participants"
+      Audio:
+        Speaker:
+          Choice: Same as System
+        Microphone:
+          Choice: Same as System
+        Mute my mic when joining a meeting:
+          Clicked: false
+        Automatically join computer audio when joining a meeting:
+          Clicked: true
+      Share Screen:
+        Window size when screen sharing: Maximize window
+        Scale to fit shared content to Zoom window:
+          Clicked: true
+      Code:
+        Chat Settings:
+          Show Code Snippet button:
+            Clicked: true
+  iTerm:
+    Preferences:
+      General:
+        Selection:
+          Applications in terminal may access clipboard: 
+            Clicked: true
+      Profiles:
+        Default:
+          Text:
+            Font:
+              - DroidSansMono Nerd Font Mono
+              - Book
+              - 10
+          Keys:
+            Key Mappings:
+              - 
+                Keyboard Shortcut: ⌥←
+                Action: Send Escape Sequence
+                Esc+: b
+              - 
+                Keyboard Shortcut: ⌥→
+                Action: Send Escape Sequence
+                Esc+: f
+            Left Option (⌥) Key: Esc+
+
+manipulations:
+  Dock:
+    Items:
+      - Finder
+      - Google Chrome
+      - iTerm
+      - Xcode
+      - Mailplane
+      - Slack
+      - zoom.us
+      - Messages
+      - Postman
+      - Todoist
+      - Bear
+      - Agenda
+      - Microsoft OneNote
+      - Reminders
+      - Sublime Text
+      - Skitch
+      - 1password 7
+      - MindNode
+      - Spotify
+      - System Preferences
+  Finder:
+    Favorites:
+      - ~/src
+      - ~
+
+
