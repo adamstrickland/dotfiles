@@ -14,10 +14,10 @@ Plug 'elmcast/elm-vim', { 'for': 'elm' }
 Plug 'ervandew/supertab'
 Plug 'fatih/molokai'
 Plug 'fatih/vim-go', { 'for': 'go' }
-Plug 'garyburd/go-explorer', { 'for': 'go' }
+" Plug 'garyburd/go-explorer', { 'for': 'go' }
 Plug 'godlygeek/tabular'
 Plug 'goldfeld/vim-seek'
-Plug 'greghor/vim-pyShell'
+" Plug 'greghor/vim-pyShell'
 Plug 'hashivim/vim-terraform'
 Plug 'jgdavey/tslime.vim'
 Plug 'jgdavey/vim-blockle'
@@ -31,6 +31,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 Plug 'kien/ctrlp.vim'
 Plug 'leshill/vim-json'
+Plug 'lepture/vim-jinja', { 'for': 'sql' }
 Plug 'majutsushi/tagbar'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
@@ -43,9 +44,11 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'prettier/vim-prettier'
 Plug 'rking/ag.vim'
 Plug 'rondale-sc/vim-spacejam'
+Plug 'rust-lang/rust.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'suan/vim-instant-markdown'
+" Plug 'thalesmello/lkml.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-bundler'
