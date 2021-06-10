@@ -25,6 +25,6 @@ export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that ca
 export ASDF_PATH=$HOME/.asdf
 export ASDF_DIR=$ASDF_PATH
 
-export PATH=$HOME/bin:$HOME/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$HOME/bin:$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
 source ~/.zshenv.local
