@@ -47,7 +47,13 @@ system_preferences:
           Full: Tue 2021-June-01
   Notifications:
     Calendar:
-      Allow notifications: false
+      Allow Notifications from Calendar: false
+    Mailplane:
+      Allow Notifications from Mailplane: true
+      Mailplane alert style: Alerts
+    zoom:
+      Allow Notifications from zoom: true
+      zoom alert style: Alerts
   Internet accounts:
     Astrickland@bonobos.com:
       Calendars: 

@@ -20,3 +20,4 @@ netrc
 config/**/*
 yarnrc
 .Brewfile.lock.json
+yarnrc
