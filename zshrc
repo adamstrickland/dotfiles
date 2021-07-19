@@ -135,7 +135,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zshrc.user
 
 # Local configuration
-source ~/.zshrc.local
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -168,7 +168,4 @@ if [[ ! -z "$DEBUGZSH" ]]; then
   zprof
 fi
 
-
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+[[ -f "$HOME/.iterm2_shell_integration.zsh" ]] && source "$HOME/.iterm2_shell_integration.zsh"

@@ -27,4 +27,4 @@ export ASDF_DIR=$ASDF_PATH
 
 export PATH=$HOME/bin:$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
-source ~/.zshenv.local
+[[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
