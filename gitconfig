@@ -80,10 +80,14 @@
 	whitespace = red reverse
 [github]
 	user = adamstrickland
+[gitlab]
+	user = adam.strickland
 [rerere]
 	enabled = true
 	autoupdate = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[url "git@gitlab.com:"]
+	insteadOf = https://gitlab.com/
 [gpg]
 	program = gpg
