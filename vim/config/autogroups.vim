@@ -19,3 +19,5 @@ au BufNewFile,BufReadPost *.yml set filetype=yaml
 au BufNewFile,BufRead *.xml.erb set filetype=xml
 
 au BufNewFile,BufRead *.lkml,*.lookml set filetype=lkml
+
+au BufNewFile,BufRead .envrc* set filetype=bash
