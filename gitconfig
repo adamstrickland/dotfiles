@@ -91,3 +91,5 @@
 	insteadOf = https://gitlab.com/
 [gpg]
 	program = gpg
+[init]
+	defaultBranch = main
