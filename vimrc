@@ -16,3 +16,5 @@ source ~/.vim/config/keymappings.vim
 source ~/.vim/config/autogroups.vim
 
 colorscheme dracula
+
+source pwd()."/.vimrc.local"

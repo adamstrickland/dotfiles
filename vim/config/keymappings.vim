@@ -69,6 +69,8 @@ nmap <f5> ta
 
 nmap zB V%zf
 
+nmap zF varzf
+
 " notes
 nmap <leader>en :NoteFromSelectedText<CR>
 nmap <leader>sn :SplitNoteFromSelectedText<CR>

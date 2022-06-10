@@ -21,3 +21,13 @@ au BufNewFile,BufRead *.xml.erb set filetype=xml
 au BufNewFile,BufRead *.lkml,*.lookml set filetype=lkml
 
 au BufNewFile,BufRead .envrc* set filetype=bash
+
+au BufNewFile,BufRead *.nvim set filetype=vim
+
+au FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
+    \  matchlist(system('cat `which plantuml` | grep plantuml.jar'), '\v.*\s[''"]?(\S+plantuml\.jar).*'),
+    \  1,
+    \  0)
+
+au BufNewFile,BufRead CODEOWNERS set filetype=codeowners
+au BufNewFile,BufRead codeowners\.vim set filetype=vim

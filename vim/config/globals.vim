@@ -101,6 +101,20 @@ let g:scratch_insert_autohide = 0
 
 " ALE
 let g:ale_linters_explicit = 1
-let g:ale_linters = {}
+" let g:ale_linters = {}
+let b:ale_linters = {
+      \ 'javascript': ['eslint', 'prettier'],
+      \ 'css': ['prettier'],
+      \ 'scss': ['prettier'],
+      \ 'jsx': ['eslint', 'prettier'],
+      \ 'dart': ['/home/jkogara/.pub-cache/bin/dart_language_server'],
+      \ 'dockerfile': ['hadolint'],
+      \ 'rust': ['analyzer'],
+      \ 'elixir': ['elixir-ls'],
+      \ 'eruby': ['erubylint'],
+      \ 'ruby': ['solargraph', 'reek', 'rubocop', 'ruby', 'sorbet'] }
 
 let g:jsx_ext_required = 0
+
+" let g:fugitive_gitlab_domains = ['https://
+let g:gitlab_api_keys = { 'gitlab.com': $GITLAB_TOKEN }
