@@ -107,7 +107,7 @@ plugins=(
   history
   # last-working-dir
   # nvm
-  osx
+  macos
   # rails
   ruby
   sudo
@@ -128,6 +128,8 @@ ZSH_DISABLE_COMPFIX="true"
 UNBUNDLED_COMMANDS=(
   guard
 )
+
+# DISABLE_MAGIC_FUNCTIONS=true
 
 source $ZSH/oh-my-zsh.sh
 

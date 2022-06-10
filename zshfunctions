@@ -25,3 +25,7 @@ forceopen() {
   fi
   xattr -d com.apple.quarantine $1
 }
+
+jsonpaths () {
+  jq -r 'paths|join(".")' | sed 's/\.[0-9][0-9]*/[]/g' | sort | uniq
+}
