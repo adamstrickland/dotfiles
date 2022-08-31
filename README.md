@@ -35,7 +35,7 @@
 
   ```sh
   cd ~
-  git clone git@github.com:adamstrickland/dotfiles ~/.dotfiles
+  git clone --recurse-submodules git@github.com:adamstrickland/dotfiles ~/.dotfiles
   ```
 
 1. Run setup

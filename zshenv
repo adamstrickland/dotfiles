@@ -1,5 +1,6 @@
 export SKIP_GLOBAL_COMPINIT=1
 export HOMEBREW_NO_AUTO_UPDATE=1
+export OPENSSL_CFLAGS=-Wno-error=implicit-function-declaration
 
 export HOST_SCHEME=http://127.0.0.1
 
@@ -23,7 +24,7 @@ export BREW_PATH=/usr/local/opt
 
 export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that call is very slow
 export ASDF_PATH=$HOME/.asdf
-export ASDF_DIR=$ASDF_PATH
+# export ASDF_DIR=$ASDF_PATH
 
 export PATH=$HOME/bin:$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 

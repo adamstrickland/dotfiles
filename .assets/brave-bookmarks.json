@@ -1,0 +1,48 @@
+{
+   "checksum": "f2c6f6003c4eca1a1bc68c90148890f4",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13302653853095193",
+               "guid": "2894308c-d6c1-476e-a497-874c8ea5013b",
+               "id": "5",
+               "name": "Huntr | Board | Job Search 2022 - Adam Strickland",
+               "type": "url",
+               "url": "https://huntr.co/track/boards/62d017f6263c98002858b6d5/board"
+            } ],
+            "date_added": "13302653867179141",
+            "date_modified": "13302653867179463",
+            "guid": "e15f672f-5fdf-4c0c-a473-7e2203f4e08f",
+            "id": "6",
+            "name": "Personal",
+            "type": "folder"
+         } ],
+         "date_added": "13302643163052571",
+         "date_modified": "13302653853095193",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13302643163052574",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13302643163052575",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

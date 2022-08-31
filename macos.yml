@@ -1,0 +1,249 @@
+---
+macos:
+  System Preferences:
+    General:
+      Appearance: Dark
+      Default web browser: Brave Browser
+    "Desktop & Screen Saver":
+      Screen Saver:
+        Show screen saver after:
+          -checked: true
+          -value: 1 Hour
+    "Dock & Menu Bar":
+      Size: 0.25
+      Magnification:
+        -checked: true
+        -value: 0.5
+    "Language & Region":
+      General:
+        Time format:
+          24-Hour Time:
+            -checked: true
+      "Advanced...":
+        Dates:
+          Short:
+            - Day of month: "##"
+            - "-"
+            - Month: Aaa
+          Medium:
+            - Day of month: "##"
+            - "-"
+            - Month: Aaa
+            - "-"
+            - Year: "####"
+          Long:
+            - Year: "####"
+            - "-"
+            - Month: "##"
+            - "-"
+            - Day of month: "##"
+          Full:
+            - Day of week: Aaa
+            - Year: "####"
+            - "-"
+            - Month: "##"
+            - "-"
+            - Day of month: "##"
+        Times:
+          Full:
+            - Hour: "##"
+            - ":"
+            - Minute: "##"
+            - ":"
+            - Second: "##"
+            - "."
+            - Milliseconds: "###"
+            - Time Zone: "-####"
+            - "Z"
+    Sound:
+      Output volume: 0.75
+      Input:
+        Select a device for sound input: Razer Kiyo
+        Settings for the selected device:
+          Input volume: 0.75
+      Output:
+        Select a device for sound output: MacBook Pro Speakers
+      Sound Effects:
+        Select an alert sound: Submerge
+    Keyboard:
+      Keyboard:
+        Modifier Keys...:
+          "Caps Lock (⇪) Key": "^ Control"
+      Shortcuts:
+        Use keyboard navigation to move focus between controls: true
+      Dictation:
+        Shortcut: Off
+    Battery:
+      Battery:
+        Turn display off after: 30 min
+      Power Adapter:
+        Turn display off after: 3 hrs
+    Trackpad:
+      "Point & Click":
+        Force Click and haptic feedback: false
+        "Look up & data detectors":
+          -checked: true
+          -value: Tap with three fingers
+      More Gestures:
+        Swipe between pages:
+          -checked: true
+          -value: Swipe with three fingers
+        App Exposé:
+          -checked: true
+          -value: Swipe down with three fingers
+    "Security & Privacy":
+      Privacy:
+        Accessibility:
+          -authorize: true
+          1Password: true
+          Alfred 5: true
+          Dropbox: true
+          iTerm: true
+          Magnet: true
+        Contacts:
+          -authorize: true
+          Alfred 5: true
+        Full Disk Access:
+          -authorize: true
+          Alfred 5: true
+          iTerm: true
+          Terminal: true
+        Location Services:
+          Brave Browser: true
+          Google Calendar: true
+  applications:
+    Alfred 5:
+      Preferences:
+        General:
+          Startup:
+            Launch Alfred at login: true
+          Alfred Hotkey: "⌥+`"
+        Appearance:
+          Options:
+            How he looks:
+              Hide menu bar icon: true
+    Zoom:
+      Preferences:
+        General:
+          Add Zoom to macOS menu bar: false
+        "Background & Effects":
+          Virtual Backgrounds:
+            Blur: true
+        Audio:
+          Automatically adjust microphone volume: false
+    1Password:
+      General:
+        Keep 1Password in the menu bar: false
+      Appearance:
+        Density: Compact
+      Security:
+        Auto-lock:
+          Lock on sleep, screensaver, or switching users: true
+          Lock after the computer is idle for: Never 
+    Brave Browser:
+      Preferences:
+        Get started:
+          Profile name and icon:
+            Name your Brave profile: Adam
+        Search engine:
+          Search engine used in the address bar: Google
+        Extensions:
+          Get more extensions:
+            -authenticated:
+              Sign In: :google
+            -items:
+              - 1Password - Password Manager
+              - Disable Automatic Gain Control
+              - AdBlock - best ad blocker
+    Gmail:
+      -after: Install Gmail
+      Global Preferences...:
+        Accounts:
+          Add Gmail Account:
+            -authenticated:
+              Sign In: :google
+          "Account 1 (#1)":
+            -click: :sprocket
+              General:
+                Account:
+                  Name: Personal
+                  Color: Indigo
+                  -click: :image
+                    SELECT LOCAL IMAGE...:
+                      -file: ~/.dotfiles/.assets/anarchy.png
+                    Use transparent background: true
+    Google Calendar:
+      -after: Install Google Calendar
+      Global Preferences...:
+        Accounts:
+          Add Google Calendar Account:
+            -authenticated:
+              Sign In: :google
+          "Account 1 (#1)":
+            -click: :sprocket
+              General:
+                Account:
+                  Name: Personal
+                  Color: Indigo
+                  -click: :image
+                    SELECT LOCAL IMAGE...:
+                      -file: ~/.dotfiles/.assets/anarchy.png
+                    Use transparent background: true
+              Appearance:
+                Dark Reader:
+                  "Create unofficial dark theme for every web service & account": Yes
+    iTerm:
+      Preferences:
+        General:
+          Closing:
+            Confirm closing multiple sessions: false
+            Confirm "Quit iTerm2 (⌘Q)": false
+          Selection:
+            Applications in terminal may access clipboard: true
+        Profiles:
+          Default:
+            Keys:
+              Key Mappings:
+                "+":
+                  Keyboard Shortcut: ⌥+⟵
+                  Action: Send Escape Sequence
+                  Esc+: b
+                "+":
+                  Keyboard Shortcut: ⌥+⟶
+                  Action: Send Escape Sequence
+                  Esc+: f
+                "+":
+                  Keyboard Shortcut: ⌘+Delete
+                  Action: Send Hex Codes
+                    -value: 0x15
+                "+":
+                  Keyboard Shortcut: ⌥+Delete
+                  Action: Send Hex Codes
+                    -value: 0x17
+  orchestrations:
+    WebCatalog:
+      - click: Catalog
+      - in: Gmail
+        click: INSTALL
+        as: Install Gmail
+      - in: Google Calendar
+        click: INSTALL
+        as: Install Google Calendar
+  commands:
+    - defaults write com.apple.Finder APpleShowAllFiles true && killall Finder
+    - rm /Users/adamstrickland/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/Bookmarks
+    - ln -s /Users/adamstrickland/.dotfiles/.assets/brave-bookmarks.json /Users/adamstrickland/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/Bookmarks
+  dock:
+    items:
+      - Finder
+      - System Preferences
+      - Launchpad
+      - iTerm
+      - Google Calendar
+      - Gmail
+      - Slack
+      - Messages
+      - Brave Browser
+      - Obsidian
+      - Spotify
+      - 1Password

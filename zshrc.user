@@ -1,7 +1,9 @@
 source ~/.zshfunctions
 source ~/.zshaliases
 
-source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
+source $(brew --prefix asdf)/libexec/asdf.sh
+# source $HOME/.asdf/completions/asdf.bash
 
 export PATH=~/go/bin:$PATH
+
+eval "$(direnv hook zsh)"
