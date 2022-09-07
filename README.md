@@ -38,10 +38,17 @@
   git clone --recurse-submodules git@github.com:adamstrickland/dotfiles ~/.dotfiles
   ```
 
-1. Run setup
+1. Run setup:
+  1. First, download the script:
 
   ```sh
-  sh ~/.dotfiles/.bin/setup
+  curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac > $HOME/.dotfiles/.bin/mac
+  ```
+
+  2. Second, execute said script:
+
+  ```sh
+  sh $HOME/.dotfiles/.bin/mac
   ```
 
 1. Install OhMyZsh

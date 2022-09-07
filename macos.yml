@@ -197,7 +197,7 @@ macos:
         General:
           Closing:
             Confirm closing multiple sessions: false
-            Confirm "Quit iTerm2 (⌘Q)": false
+            'Confirm "Quit iTerm2 (⌘Q)"': false
           Selection:
             Applications in terminal may access clipboard: true
         Profiles:
@@ -230,7 +230,7 @@ macos:
         click: INSTALL
         as: Install Google Calendar
   commands:
-    - defaults write com.apple.Finder APpleShowAllFiles true && killall Finder
+    - defaults write com.apple.Finder AppleShowAllFiles true && killall Finder
     - rm /Users/adamstrickland/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/Bookmarks
     - ln -s /Users/adamstrickland/.dotfiles/.assets/brave-bookmarks.json /Users/adamstrickland/Library/Application\ Support/BraveSoftware/Brave-Browser/Default/Bookmarks
   dock:
