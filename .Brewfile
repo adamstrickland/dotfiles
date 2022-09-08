@@ -1,9 +1,11 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/services"
 
 tap "codeclimate/formulae"
 tap "d12frosted/emacs-plus"
-# tap "fishtown-analytics/dbt"
+tap "thoughtbot/formulae"
+tap "universal-ctags/universal-ctags"
 
 brew "autoconf"
 brew "automake"
@@ -16,6 +18,7 @@ brew "libtool"
 brew "libunistring"
 brew "libxslt"
 
+brew "asdf"
 brew "awscli"
 brew "bat"
 brew "colordiff"
@@ -23,7 +26,6 @@ brew "circleci"
 brew "coreutils"
 brew "cowsay"
 brew "curl"
-# brew "dbt"
 brew "diff-so-fancy"
 brew "direnv"
 brew "docker-compose"
@@ -58,76 +60,59 @@ brew "neovim"
 brew "netcat"
 brew "ngrok"
 brew "openjdk"
-# brew "pandoc"
-# brew "pango"
+brew "openssl"
 brew "pcre"
 brew "podman"
 brew "prettyping"
 # brew "qt@5.5", link: true
-# brew "redis"
+brew "rcm"
+brew "reattach-to-user-namespace"
 brew "ripgrep"
 brew "ruby-install"
 brew "svn"
-# brew "terraform"
-# brew "tfenv"
+brew "the_silver_searcher"
 brew "tig"
 brew "tldr"
-# brew "tmate"
+brew "tmux"
+brew "vim"
+brew "watchman"
 brew "wget"
 brew "yarn"
+brew "zsh"
 brew "zsh-syntax-highlighting"
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+
+brew "libyaml" # must come after openssl
 
 cask "1password"
 cask "agenda"
 cask "alfred"
-# cask "anaconda"
-# cask "atom"
 cask "brave-browser"
 cask "google-chrome"
+cask "gpg-suite-no-mail"
 cask "chromedriver"
 cask "docker"
 cask "dropbox"
-# cask "fantastical"
 cask "font-droid-sans-mono-for-powerline"
 cask "font-droid-sans-mono-nerd-font"
 cask "font-hack-nerd-font"
-# cask "gpg-suite"
 cask "istat-menus"
 cask "iterm2"
 cask "kindle"
-# cask "mailplane"
 cask "obsidian"
 cask "opendnsupdater"
 cask "pandora"
 cask "phantomjs"
 cask "pock"
-# cask "postman"
-# cask "sfdx"
 cask "shift"
 cask "slack"
 cask "spotify"
-# cask "skitch"
 cask "sublime-text"
 cask "tla-plus-toolbox"
-# cask "vagrant"
-# cask "visual-studio-code"
 cask "webcatalog"
-# cask "zoom"
 
-# mas "Bear",                     id: 1091189122
 mas "Developer",                id: 640199958
-# mas "Garage Band",              id: 682658836
 mas "Gestimer",                 id: 990588172
-# mas "Keynote",                  id: 361285480
 mas "Magnet",                   id: 441258766
-# mas "Microsoft Remote Desktop", id: 1295203466
 mas "MindNode",                 id: 1289197285
-# mas "Numbers",                  id: 409203825
-# mas "OneNote",                  id: 784801555
-# mas "Pages",                    id: 409201541
 mas "Pixelmator Pro",           id: 1289583905
-# mas "Playgrounds",              id: 1496833156
-# mas "Sonos",                    id: 293523031
-# mas "Todoist",                  id: 585829637
-# mas "Transporter",              id: 145087484
-# mas "Xcode",                    id: 497799835
