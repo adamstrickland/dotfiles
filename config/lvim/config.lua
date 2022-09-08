@@ -205,6 +205,7 @@ lvim.plugins = {
   { "christoomey/vim-tmux-navigator" },
   -- { "matbme/JABS.nvim" },
   { "GitHub/copilot.vim" },
+  { "lukas-reineke/indent-blankline.nvim" },
   {
     "tpope/vim-fugitive",
     cmd = {
