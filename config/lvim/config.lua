@@ -203,7 +203,6 @@ parser_configs.hcl = {
 -- }
 lvim.plugins = {
   { "christoomey/vim-tmux-navigator" },
-  -- { "matbme/JABS.nvim" },
   { "GitHub/copilot.vim" },
   { "lukas-reineke/indent-blankline.nvim" },
   {
@@ -227,7 +226,7 @@ lvim.plugins = {
   },
   { "tpope/vim-git" },
   { "tpope/vim-repeat" },
-  -- { "tpope/vim-surround" },
+  { "tpope/vim-surround" },
   { "vim-scripts/bufexplorer.zip" },
 }
 
