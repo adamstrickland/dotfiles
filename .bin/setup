@@ -11,7 +11,6 @@ end
 #
 # home_dir = File.expand_path('~')
 # zshrc_path = home_dir / '.zshrc'
-
 # def append_to_zshrc(line)
 #   system("echo '#{line}' >> #{zshrc_path}")
 # end
@@ -28,15 +27,15 @@ end
 # maybe update shell?
 
 # install homebrew
-homebrew_dir = if `uname -m`.chomp == 'arm64'
-                 '/opt/homebrew'
-               else
-                 '/usr/local'
-               end
-homebrew = File.join(homebrew_dir, 'bin', 'brew')
+homebrew_dir = if `uname -m`.chomp == "arm64"
+  "/opt/homebrew"
+else
+  "/usr/local"
+end
+homebrew = File.join(homebrew_dir, "bin", "brew")
 
-unless system('command -v brew > /dev/null')
-  homebrew_installer_url = 'https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh'
+unless system("command -v brew > /dev/null")
+  homebrew_installer_url = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
 
   # system "/bin/bash -c \"$(curl -fsSL #{homebrew_installer_url})\""
   curl_install! homebrew_installer_url
@@ -49,8 +48,8 @@ end
 # update homebrew
 system "#{homebrew} update --force"
 
-dotfiles_path = File.expand_path(File.join(File.dirname(__FILE__), '..'))
-brewfile_path = File.join(dotfiles_path, '.Brewfile')
+dotfiles_path = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+brewfile_path = File.join(dotfiles_path, ".Brewfile")
 
 # install brews from .Brewfile
 system "#{homebrew} bundle --file=#{brewfile_path}"
@@ -61,7 +60,7 @@ system "#{homebrew} bundle --file=#{brewfile_path}"
 # end cribbed script
 
 # install OhMyZsh
-curl_install! 'https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh'
+curl_install! "https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
 
 # run rcup
-system "env RCRC=#{File.join(dotfiles_path, 'rcrc')} rcup"
+system "env RCRC=#{File.join(dotfiles_path, "rcrc")} rcup"
