@@ -137,6 +137,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
+-- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "solargraph" })
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
@@ -203,7 +204,7 @@ parser_configs.hcl = {
 -- }
 lvim.plugins = {
   { "christoomey/vim-tmux-navigator" },
-  { "GitHub/copilot.vim" },
+  -- { "GitHub/copilot.vim" },
   { "lukas-reineke/indent-blankline.nvim" },
   {
     "tpope/vim-fugitive",
@@ -228,7 +229,26 @@ lvim.plugins = {
   { "tpope/vim-repeat" },
   { "tpope/vim-surround" },
   { "vim-scripts/bufexplorer.zip" },
+  {
+    "zbirenbaum/copilot.lua",
+    event = { "VimEnter" },
+    config = function()
+      vim.defer_fn(function()
+        require("copilot").setup {
+          plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
+          copilot_node_command = os.getenv("HOME") .. "/.asdf/shims/node",
+        }
+      end, 100)
+    end,
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua", "nvim-cmp" },
+  },
 }
+
+lvim.builtin.cmp.formatting.source_names["copilot"] = "(Copilot)"
+table.insert(lvim.builtin.cmp.sources, 1, { name = "copilot" })
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
