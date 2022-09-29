@@ -18,6 +18,8 @@ netrc
 .netrc
 
 config/**/*
+!config/astronvim/*
+
 yarnrc
 .Brewfile.lock.json
 yarnrc
