@@ -1,25 +1,127 @@
 {
-   "checksum": "f2c6f6003c4eca1a1bc68c90148890f4",
+   "checksum": "073135b25a37c7dafc99099cb9542a69",
    "roots": {
       "bookmark_bar": {
          "children": [ {
+            "date_added": "13302723534959134",
+            "guid": "d1350796-380c-4327-b09c-87add479d828",
+            "id": "9",
+            "name": "NYT",
+            "type": "url",
+            "url": "https://www.nytimes.com/"
+         }, {
+            "date_added": "13302723594595532",
+            "guid": "4beb7ccd-d89f-4607-90d3-243387a408be",
+            "id": "10",
+            "name": "The Guardian",
+            "type": "url",
+            "url": "https://www.theguardian.com/us"
+         }, {
             "children": [ {
-               "date_added": "13302653853095193",
-               "guid": "2894308c-d6c1-476e-a497-874c8ea5013b",
-               "id": "5",
-               "name": "Huntr | Board | Job Search 2022 - Adam Strickland",
+               "date_added": "13302901425973185",
+               "guid": "899dc23c-e002-4d7e-853d-9255a4dad608",
+               "id": "11",
+               "name": "The Infatuation",
                "type": "url",
-               "url": "https://huntr.co/track/boards/62d017f6263c98002858b6d5/board"
+               "url": "https://www.theinfatuation.com/new-york"
+            }, {
+               "children": [ {
+                  "date_added": "13303580441599684",
+                  "guid": "c3cb5173-b25d-4ae6-b1d4-72ec2930ba5d",
+                  "id": "14",
+                  "name": "College Spreadsheet - 2022",
+                  "type": "url",
+                  "url": "https://www.diycollegerankings.com/diy-college-rankings-spreadsheet-lp-2/?utm_source=10Worst&utm_medium=Website&utm_campaign=Spreadsheet"
+               }, {
+                  "date_added": "13303400939911800",
+                  "guid": "890d7497-6955-4caa-9789-85411db4c137",
+                  "id": "13",
+                  "name": "Call Forwarding FAQs | Verizon",
+                  "type": "url",
+                  "url": "https://www.verizon.com/support/call-forwarding-faqs/"
+               } ],
+               "date_added": "13303580456918632",
+               "date_modified": "13303580466917272",
+               "guid": "af9d750c-b9ad-4878-a5ae-bbb09ff3f457",
+               "id": "15",
+               "name": "Info",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13303670854607578",
+                  "guid": "1575b89e-28f9-4258-a847-8cffabad7f43",
+                  "id": "17",
+                  "name": "Save Recipe",
+                  "type": "url",
+                  "url": "javascript:function%20save_paprika_recipe()%7Bvar%20d%3Ddocument%3Bif(!d.body)return%3Btry%7Bvar%20s%3Dd.createElement(%27scr%27%2B%27ipt%27)%3Bs.setAttribute(%27src%27,d.location.protocol%2B%27//www.paprikaapp.com/bookmarklet/v1/%3Ftoken%3Dbdfcc15e3c60c4168a379e29abdeb6bc0a74ea8cfdd9ecacc59403874c9e2877%26timestamp%3D%27%2B(new%20Date().getTime()))%3Bd.body.appendChild(s)%3B%7Dcatch(e)%7B%7D%7D%3Bsave_paprika_recipe()%3Bvoid(0)%3B"
+               } ],
+               "date_added": "13303670780944786",
+               "date_modified": "13305310044905472",
+               "guid": "23f2a5e8-ecf0-4119-bea9-011258284531",
+               "id": "16",
+               "name": "Tools",
+               "type": "folder"
+            }, {
+               "date_added": "13305310044905472",
+               "guid": "c639d553-4c59-4acb-bca4-7fdc45d38e1c",
+               "id": "19",
+               "name": "Calendly",
+               "type": "url",
+               "url": "https://calendly.com/event_types/user/me"
+            }, {
+               "date_added": "13305322307525698",
+               "guid": "27eda406-734f-4049-9063-a2d32f92fb05",
+               "id": "20",
+               "name": "HackerRank",
+               "type": "url",
+               "url": "https://www.hackerrank.com/codepair/whhmhnhzccnlvlcikcerhafdyqzfwzpn/questions/1?b=eyJpbnRlcnZpZXdfaWQiOjM0NzYxMjAsInJvbGUiOiJpbnRlcnZpZXdlciIsInNob3J0X3VybCI6Imh0dHBzOi8vaHIuZ3MvYmVhYTc3OSIsImNhbmRpZGF0ZV91cmwiOiJodHRwczovL2hyLmdzL2ZhMDc4MWIifQ"
+            }, {
+               "date_added": "13306268743765980",
+               "guid": "eb44e6bc-b180-47e3-8c95-55930d8bf4ea",
+               "id": "22",
+               "name": "COBRApoint",
+               "type": "url",
+               "url": "https://cobrapoint.benaissance.com/Home/IdentifyUser"
+            }, {
+               "date_added": "13306271378050844",
+               "guid": "6fc3a648-7ff8-4291-9604-7e0dd4b59a0f",
+               "id": "23",
+               "name": "O'Reilly",
+               "type": "url",
+               "url": "https://learning.oreilly.com/home/"
             } ],
             "date_added": "13302653867179141",
-            "date_modified": "13302653867179463",
+            "date_modified": "13306271378050844",
             "guid": "e15f672f-5fdf-4c0c-a473-7e2203f4e08f",
             "id": "6",
             "name": "Personal",
             "type": "folder"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13306522460971319",
+                  "guid": "83ef34c5-078d-4239-92fa-f0f43601944b",
+                  "id": "25",
+                  "name": "Shareworks - Shareworks",
+                  "type": "url",
+                  "url": "https://shareworks.solium.com/solium/servlet/userGwtAction.do#LoginRequirementsPage"
+               } ],
+               "date_added": "13306522455887463",
+               "date_modified": "13306522465003663",
+               "guid": "4cc715a1-2d2d-432b-91ae-f5f9c99fb065",
+               "id": "24",
+               "name": "Hopin",
+               "type": "folder"
+            } ],
+            "date_added": "13302723520795745",
+            "date_modified": "13306522460971319",
+            "guid": "f6948d99-04b5-421c-930d-395cf1f58dfc",
+            "id": "8",
+            "name": "Work",
+            "type": "folder"
          } ],
          "date_added": "13302643163052571",
-         "date_modified": "13302653853095193",
+         "date_modified": "13303670854607578",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks",
