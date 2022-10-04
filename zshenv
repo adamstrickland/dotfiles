@@ -20,13 +20,18 @@ export LS_COLORS="ex=01;31:ln=00;92"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 export EDITOR=vim
 
-export BREW_PATH=/usr/local/opt
+export BREW_PREFIX=/usr/local
+export BREW_PATH=$BREW_PREFIX/opt
 
-export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that call is very slow
 export ASDF_PATH=$HOME/.asdf
 # export ASDF_DIR=$ASDF_PATH
 
-export PATH=$HOME/bin:$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH_HOME_BIN=$HOME/bin:$HOME/.bin:$HOME/.local/bin
+export PATH_MACHINE_BIN=/usr/bin:/bin:/usr/sbin:/sbin
+export PATH_BREW_BIN=/usr/local/bin:/usr/local/sbin
 
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
 
+export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that call is very slow
+
+export PATH=$PATH_HOME_BIN:$PATH_BREW_BIN:$PATH_MACHINE_BIN:$PATH

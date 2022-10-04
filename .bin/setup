@@ -2,7 +2,7 @@
 
 # frozen_string_literal: true
 
-def curl_install!(url)
+def curl_install(url)
   system "/bin/bash -c \"$(curl -fsSL #{url})\""
 end
 
@@ -38,7 +38,7 @@ unless system("command -v brew > /dev/null")
   homebrew_installer_url = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
 
   # system "/bin/bash -c \"$(curl -fsSL #{homebrew_installer_url})\""
-  curl_install! homebrew_installer_url
+  curl_install homebrew_installer_url
 
   # append_to_zshrc "eval \"$(#{homebrew} shellenv)\""
 end
@@ -60,7 +60,7 @@ system "#{homebrew} bundle --file=#{brewfile_path}"
 # end cribbed script
 
 # install OhMyZsh
-curl_install! "https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
+curl_install "https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
 
 # run rcup
 system "env RCRC=#{File.join(dotfiles_path, "rcrc")} rcup"
