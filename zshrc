@@ -21,6 +21,8 @@ export ZSH_COMPDUMP=$HOME/.zcompdump
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+ZSH_CUSTOM=$HOME/.config/ohmyzsh
+
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir vcs)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(rvm battery date time_joined)
@@ -105,6 +107,7 @@ plugins=(
   common-aliases
   git
   history
+  iterm
   # last-working-dir
   # nvm
   macos
