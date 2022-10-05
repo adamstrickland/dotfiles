@@ -107,7 +107,7 @@ plugins=(
   common-aliases
   git
   history
-  iterm
+  iterm2
   # last-working-dir
   # nvm
   macos
