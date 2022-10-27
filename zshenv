@@ -30,6 +30,9 @@ export PATH_HOME_BIN=$HOME/bin:$HOME/.bin:$HOME/.local/bin
 export PATH_MACHINE_BIN=/usr/bin:/bin:/usr/sbin:/sbin
 export PATH_BREW_BIN=/usr/local/bin:/usr/local/sbin
 
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
 
 export FZF_PATH=$BREW_PATH/fzf # changed from $(brew --prefix fzf) since that call is very slow

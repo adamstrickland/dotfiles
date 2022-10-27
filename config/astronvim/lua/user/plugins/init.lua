@@ -59,4 +59,5 @@ return {
       astronvim.add_user_cmp_source("copilot")
     end,
   },
+  { "jamestthompson3/nvim-remote-containers" },
 }
