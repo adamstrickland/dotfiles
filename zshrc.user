@@ -1,3 +1,24 @@
+export ASDF_HOME=$HOME/.asdf
+export ASDF_PATH=$ASDF_HOME
+
+# export BREW_HOME_ARM64=/opt/homebrew
+# export BREW_HOME_I386=/usr/local
+# export BREW_HOME=$([ $(arch) = 'arm64' ] && echo $BREW_HOME_ARM64 || echo $BREW_HOME_I386 )
+
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
+export FZF_HOME=$HOMEBREW_PREFIX/opt/fzf # changed from $(brew --prefix fzf) since that call is very slow
+export FZF_PATH=$FZF_HOME
+
+export GEMRC=~/.gemrc.local
+
+export OPENSSL_CFLAGS=-Wno-error=implicit-function-declaration
+
+# export PSQL_EDITOR='vim -c"setf sql"'
+
+# export RI="--format ansi -T"
+
+# export VISUAL=vim
+
 source ~/.zshfunctions
 source ~/.zshaliases
 

@@ -39,6 +39,7 @@ alias tfa='tf apply'
 alias tfi='tf init'
 alias tfp='tf plan'
 alias top='sudo htop'
+alias tsd='ts default'
 alias vi="nvim"
 alias ye=yarn exec
 alias zcp='zmv -C'

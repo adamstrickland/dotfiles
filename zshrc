@@ -1,3 +1,4 @@
+# to use this, run `time DEBUGZSH=1 zsh -i -c exit`
 if [[ ! -z "$DEBUGZSH" ]]; then
   zmodload zsh/zprof
 fi
