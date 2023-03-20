@@ -33,4 +33,4 @@ def clippy
   @clippy
 end
 
-load File.expand_path("~/.irbrc.local") if File.exists?(File.expand_path("~/.irbrc.local"))
+load File.expand_path("~/.irbrc.local") if File.exist?(File.expand_path("~/.irbrc.local"))

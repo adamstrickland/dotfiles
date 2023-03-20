@@ -20,6 +20,6 @@ export SKIP_GLOBAL_COMPINIT=1
 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_LOCAL_HOME=$HOME/.local
-export XDG_DATA_HOME=$XDG_LOCAL_HOME/.local/share
+export XDG_DATA_HOME=$XDG_LOCAL_HOME/share
 
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
