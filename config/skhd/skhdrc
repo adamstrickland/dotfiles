@@ -1,0 +1,25 @@
+cmd + ctrl - l : yabai -m window --focus east
+cmd + ctrl - k : yabai -m window --focus north
+cmd + ctrl - j : yabai -m window --focus south
+cmd + ctrl - h : yabai -m window --focus west
+
+cmd + ctrl - n : yabai -m space --focus next
+cmd + ctrl - p : yabai -m space --focus prev
+
+cmd + ctrl - z : yabai -m window --toggle zoom-fullscreen
+
+cmd + ctrl - space : yabai -m space --create && yabai -m window --space last && yabai -m space --focus last
+
+cmd + ctrl - 0x18 : yabai -m window --toggle split
+
+cmd + ctrl - 0x2B : yabai -m space --rotate 270
+cmd + ctrl - 0x2F : yabai -m space --rotate 90
+
+cmd + ctrl - 0x21 : yabai -m window --swap prev
+cmd + ctrl - 0x1E : yabai -m window --swap next
+cmd + ctrl + shift - l : yabai -m window --swap east
+cmd + ctrl + shift - k : yabai -m window --swap north
+cmd + ctrl + shift - j : yabai -m window --swap south
+cmd + ctrl + shift - h : yabai -m window --swap west
+
+cmd + ctrl - 0x2A : yabai -m query --spaces --window | jq -e '.[].type == "bsp"' > /dev/null && yabai -m space --layout "float" || { yabai -m space --layout "bsp" } 
