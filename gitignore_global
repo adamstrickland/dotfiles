@@ -2,7 +2,6 @@
 .*.un~
 *.un~
 .Guardfile
-FILES
 /.vim/.swp
 /.vim/sessions
 *.log

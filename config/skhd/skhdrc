@@ -1,25 +1,66 @@
-cmd + ctrl - l : yabai -m window --focus east
-cmd + ctrl - k : yabai -m window --focus north
-cmd + ctrl - j : yabai -m window --focus south
-cmd + ctrl - h : yabai -m window --focus west
+hyper - l : yabai -m window --focus east
+hyper - k : yabai -m window --focus north
+hyper - j : yabai -m window --focus south
+hyper - h : yabai -m window --focus west
 
-cmd + ctrl - n : yabai -m space --focus next
-cmd + ctrl - p : yabai -m space --focus prev
+hyper - z : yabai -m window --toggle zoom-fullscreen
 
-cmd + ctrl - z : yabai -m window --toggle zoom-fullscreen
+hyper - space : yabai -m space --create && yabai -m window --space last && yabai -m space --focus last
 
-cmd + ctrl - space : yabai -m space --create && yabai -m window --space last && yabai -m space --focus last
+hyper - 0x18 : yabai -m window --toggle split
 
-cmd + ctrl - 0x18 : yabai -m window --toggle split
+hyper - 0x2B : yabai -m space --rotate 270
+hyper - 0x2F : yabai -m space --rotate 90
 
-cmd + ctrl - 0x2B : yabai -m space --rotate 270
-cmd + ctrl - 0x2F : yabai -m space --rotate 90
+hyper - 0x21 : yabai -m window --swap prev
+hyper - 0x1E : yabai -m window --swap next
 
-cmd + ctrl - 0x21 : yabai -m window --swap prev
-cmd + ctrl - 0x1E : yabai -m window --swap next
-cmd + ctrl + shift - l : yabai -m window --swap east
-cmd + ctrl + shift - k : yabai -m window --swap north
-cmd + ctrl + shift - j : yabai -m window --swap south
-cmd + ctrl + shift - h : yabai -m window --swap west
+hyper - 1 : yabai -m window --space 1 && yabai -m space --focus 1
+hyper - 2 : yabai -m window --space 2 && yabai -m space --focus 2
+hyper - 3 : yabai -m window --space 3 && yabai -m space --focus 3
+hyper - 4 : yabai -m window --space 4 && yabai -m space --focus 4
+hyper - 5 : yabai -m window --space 5 && yabai -m space --focus 5
+hyper - 6 : yabai -m window --space 6 && yabai -m space --focus 6
+hyper - 7 : yabai -m window --space 7 && yabai -m space --focus 7
+hyper - 8 : yabai -m window --space 8 && yabai -m space --focus 8
+hyper - 9 : yabai -m window --space 9 && yabai -m space --focus 9
 
-cmd + ctrl - 0x2A : yabai -m query --spaces --window | jq -e '.[].type == "bsp"' > /dev/null && yabai -m space --layout "float" || { yabai -m space --layout "bsp" } 
+meh - left :  yabai -m window west  --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
+meh - down :  yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
+meh - up :    yabai -m window south --resize top:0:-20 2> /dev/null   || yabai -m window --resize top:0:-20
+meh - right : yabai -m window east  --resize left:20:0 2> /dev/null   || yabai -m window --resize left:20:0
+
+
+
+hyper - n : yabai -m space --create && yabai -m space --focus last
+
+meh - l : yabai -m window --swap east
+meh - k : yabai -m window --swap north
+meh - j : yabai -m window --swap south
+meh - h : yabai -m window --swap west
+
+meh - 1 : yabai -m space --focus 1
+meh - 2 : yabai -m space --focus 2
+meh - 3 : yabai -m space --focus 3
+meh - 4 : yabai -m space --focus 4
+meh - 5 : yabai -m space --focus 5
+meh - 6 : yabai -m space --focus 6
+meh - 7 : yabai -m space --focus 7
+meh - 8 : yabai -m space --focus 8
+meh - 9 : yabai -m space --focus 9
+
+meh - d : yabai -m display --focus next
+
+meh - 0x2B : yabai -m space --display prev
+meh - 0x2F : yabai -m space --display next
+
+meh - n : yabai -m space --focus next
+meh - p : yabai -m space --focus prev
+
+
+
+
+
+meh - 0x2C : yabai -m query --spaces | jq '.'
+hyper - 0x2A : yabai -m query --spaces --window | jq -e '.[].type == "bsp"' > /dev/null && { yabai -m space --layout "float"; echo "layout => floating" } || { yabai -m space --layout "bsp"; echo "layout => managed" } 
+hyper - 0x2C : yabai -m query --spaces --window | jq '.'

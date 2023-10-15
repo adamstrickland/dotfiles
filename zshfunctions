@@ -1,24 +1,8 @@
-portpid () {
-  lsof -nP -i4TCP:$1 | grep LISTEN
-}
-
-portkill () {
-  portpid $1 | awk '{print $2}' | xargs kill -TERM
-}
-
-opensourcedir() {
-  cd ~/src/$1 && git pull origin --rebase && vi
-}
-
-pskill () {
-  psg $1 | grep -v grep | awk '{print $2}' | xargs kill -TERM
-}
-
-function fh() {
+fh () {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
-forceopen() {
+fo () {
   if [ "$#" -ne 1 ]; then
     echo "Usage: $0 APPLICATION, where APPLICATION is the fully-qualified path to the application directory; e.g. '/Applications/Mail.app'" >&2
     exit 1
@@ -26,6 +10,26 @@ forceopen() {
   xattr -d com.apple.quarantine $1
 }
 
-jsonpaths () {
+jp () {
   jq -r 'paths|join(".")' | sed 's/\.[0-9][0-9]*/[]/g' | sort | uniq
+}
+
+os () {
+  cd ~/src/$1 && git pull origin --rebase && vi
+}
+
+pk () {
+  portpid $1 | awk '{print $2}' | xargs kill -TERM
+}
+
+pd () {
+  lsof -nP -i4TCP:$1 | grep LISTEN
+}
+
+sk () {
+  psg $1 | grep -v grep | awk '{print $2}' | xargs kill -TERM
+}
+
+watch () {
+    find . -type f | entr -c -r $@
 }
