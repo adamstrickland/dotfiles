@@ -1,3 +1,4 @@
+alias :q=exit
 alias autospec="fswatch -0 -e '.*' -i '_spec\.rb$' --event Updated --event Created spec | xargs -0 -n 1 -I {} bundle exec rspec {}"
 alias beg="be guard"
 alias cat=bat
