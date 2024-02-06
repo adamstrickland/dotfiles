@@ -5,7 +5,7 @@
 1. Update MacOS
 
     ```sh
-    
+    softwareupdate -l
     ```
 
 1. Install XCode tools
