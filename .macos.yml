@@ -228,6 +228,14 @@ application_settings:
                 Keyboard Shortcut: ⌥→
                 Action: Send Escape Sequence
                 Esc+: f
+              - 
+                Keyboard Shortcut: ⌘+Delete
+                Action: Send Hex Codes
+                -value: 0x15
+              -
+                Keyboard Shortcut: ⌥+Delete
+                Action: Send Hex Codes
+                -value: 0x17
             Left Option (⌥) Key: Esc+
 
 manipulations:
