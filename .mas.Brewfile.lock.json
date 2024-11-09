@@ -1,0 +1,38 @@
+{
+  "entries": {
+    "mas": {
+      "Developer": {
+        "id": "640199958",
+        "version": "10.5.1"
+      },
+      "Gestimer": {
+        "id": "990588172",
+        "version": "1.2.8"
+      },
+      "Magnet": {
+        "id": "441258766",
+        "version": "2.14.0"
+      },
+      "MindNode": {
+        "id": "1289197285",
+        "version": "2023.3.4"
+      },
+      "Pixelmator Pro": {
+        "id": "1289583905",
+        "version": "3.5.8"
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.2.19",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.1.0.1.1683849156",
+        "Xcode": "14.3",
+        "macOS": "13.6.6"
+      }
+    }
+  }
+}

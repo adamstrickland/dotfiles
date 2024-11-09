@@ -173,6 +173,3 @@ source ~/.zshrc.user
 if [[ ! -z "$DEBUGZSH" ]]; then
   zprof
 fi
-
-[[ -f "$HOME/.iterm2_shell_integration.zsh" ]] && source "$HOME/.iterm2_shell_integration.zsh"
-

@@ -1,3 +1,4 @@
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 export ASDF_HOME=$HOME/.asdf
 export ASDF_PATH=$ASDF_HOME
 

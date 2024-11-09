@@ -19,6 +19,7 @@ brew "libtool"
 brew "libunistring"
 brew "libxslt"
 
+brew "1password-cli"
 brew "asdf"
 brew "awscli"
 brew "bat"

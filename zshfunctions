@@ -33,3 +33,11 @@ sk () {
 watch () {
     find . -type f | entr -c -r $@
 }
+
+drb () {
+  docker run -it --rm --entrypoint "" --platform linux/amd64 $1 bash
+}
+
+drbm () {
+  drb "416918401081.dkr.ecr.us-east-1.amazonaws.com/moment-technology/$1"
+}

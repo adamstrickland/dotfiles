@@ -1,0 +1,180 @@
+{
+  "entries": {
+    "cask": {
+      "1password": {
+        "version": "8.10.30",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "agenda": {
+        "version": "18.2",
+        "options": {
+          "full_name": "agenda"
+        }
+      },
+      "alfred": {
+        "version": "5.5,2257",
+        "options": {
+          "full_name": "alfred"
+        }
+      },
+      "brave-browser": {
+        "version": "1.65.114.0",
+        "options": {
+          "full_name": "brave-browser"
+        }
+      },
+      "google-chrome": {
+        "version": "124.0.6367.62",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "gpg-suite-no-mail": {
+        "version": "2023.3",
+        "options": {
+          "full_name": "gpg-suite-no-mail"
+        }
+      },
+      "chromedriver": {
+        "version": "123.0.6312.122",
+        "options": {
+          "full_name": "chromedriver"
+        }
+      },
+      "docker": {
+        "version": "4.29.0,145265",
+        "options": {
+          "full_name": "docker"
+        }
+      },
+      "dropbox": {
+        "version": "197.4.7571",
+        "options": {
+          "full_name": "dropbox"
+        }
+      },
+      "font-droid-sans-mono-for-powerline": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-droid-sans-mono-for-powerline"
+        }
+      },
+      "font-droid-sans-mono-nerd-font": {
+        "version": "3.2.1",
+        "options": {
+          "full_name": "font-droid-sans-mono-nerd-font"
+        }
+      },
+      "font-hack-nerd-font": {
+        "version": "3.2.1",
+        "options": {
+          "full_name": "font-hack-nerd-font"
+        }
+      },
+      "istat-menus": {
+        "version": "6.73",
+        "options": {
+          "full_name": "istat-menus"
+        }
+      },
+      "iterm2": {
+        "version": "3.4.23",
+        "options": {
+          "full_name": "iterm2"
+        }
+      },
+      "kindle": {
+        "version": "1.40.65626",
+        "options": {
+          "full_name": "kindle"
+        }
+      },
+      "ngrok": {
+        "version": "3.8.0,4JvNoWcrBdQ,a",
+        "options": {
+          "full_name": "ngrok"
+        }
+      },
+      "obsidian": {
+        "version": "1.5.12",
+        "options": {
+          "full_name": "obsidian"
+        }
+      },
+      "opendnsupdater": {
+        "version": "3.1",
+        "options": {
+          "full_name": "opendnsupdater"
+        }
+      },
+      "pandora": {
+        "version": "15.0.3",
+        "options": {
+          "full_name": "pandora"
+        }
+      },
+      "phantomjs": {
+        "version": "2.1.1",
+        "options": {
+          "full_name": "phantomjs"
+        }
+      },
+      "pock": {
+        "version": "0.9.0-22",
+        "options": {
+          "full_name": "pock"
+        }
+      },
+      "shift": {
+        "version": "9.2.5.1070",
+        "options": {
+          "full_name": "shift"
+        }
+      },
+      "slack": {
+        "version": "4.37.101",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "spotify": {
+        "version": "1.2.35.663,b699649e,5769",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "sublime-text": {
+        "version": "4169",
+        "options": {
+          "full_name": "sublime-text"
+        }
+      },
+      "tla-plus-toolbox": {
+        "version": "1.7.1",
+        "options": {
+          "full_name": "tla-plus-toolbox"
+        }
+      },
+      "webcatalog": {
+        "version": "56.3.0",
+        "options": {
+          "full_name": "webcatalog"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.2.19",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.1.0.1.1683849156",
+        "Xcode": "14.3",
+        "macOS": "13.6.6"
+      }
+    }
+  }
+}
