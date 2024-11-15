@@ -25,3 +25,4 @@ yarnrc
 yarnrc
 brave-bookmarks.json.old
 .DS_Store
+.*.Brewfile.lock.json
