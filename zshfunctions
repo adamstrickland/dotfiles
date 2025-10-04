@@ -41,3 +41,47 @@ drb () {
 drbm () {
   drb "416918401081.dkr.ecr.us-east-1.amazonaws.com/moment-technology/$1"
 }
+
+watch_go_project () {
+	watchman watch $PWD
+	watchman -j <<-EOT
+	["trigger", "$PWD", {
+		"name": "gotest",
+		"expression": ["amtch", "**/*.go", "wholename"],
+		"command": ["just", "test", "./..."],
+		"append_files": false,
+		"stdout": ">>watchman.log",
+		"stderr": ">>watchman.log"
+	}]
+	EOT
+}
+
+function kcat_b() {
+  if [ "$BOOTSTRAP_SERVERS" == "" ]; then
+    echo "BOOTSTRAP_SERVERS is not set"
+    return
+  fi
+
+  kcat -b $BOOTSTRAP_SERVERS "$@"
+}
+
+function kcat_fb() {
+  if [ "$KCAT_CONFIG" == "" ]; then
+    echo "KCAT_CONFIG is not set"
+    return
+  fi
+  kcat_b -F $KCAT_CONFIG "$@"
+}
+
+function agls () {
+  ag -l $1 | xargs sed -i '.bak' "s/$1/$2/g"
+}
+
+function gresetbranch() {
+  bn=$(git rev-parse --abbrev-ref HEAD)
+  git checkout -b "$bn+bak"
+  git checkout main
+  git pull origin main
+  git branch -D "$bn"
+  git checkout -b "$bn"
+}

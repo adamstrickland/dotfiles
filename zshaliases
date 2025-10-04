@@ -1,4 +1,5 @@
 alias :q=exit
+alias agl="ag -l"
 alias autospec="fswatch -0 -e '.*' -i '_spec\.rb$' --event Updated --event Created spec | xargs -0 -n 1 -I {} bundle exec rspec {}"
 alias beg="be guard"
 alias cat=bat
@@ -30,7 +31,7 @@ alias mdr="ruby -e 'require \"tty-markdown\"; puts TTY::Markdown.parse_file(\"./
 alias more="less --RAW-CONTROL-CHARS"
 alias omzg="alias | grep"
 alias osd=opensourcedir
-alias ping='prettyping --nolegend'
+alias ping=gping
 alias ppd=portpid
 alias ppk=portkill
 alias pr="poetry run"
@@ -48,6 +49,7 @@ alias tfp='tf plan'
 alias top='sudo htop'
 alias tsd='ts default'
 alias vi="nvim"
+alias watch='watchexec --shell=zsh'
 alias ye=yarn exec
 alias zcp='zmv -C'
 alias zln='zmv -L'
