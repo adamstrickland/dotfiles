@@ -18,6 +18,11 @@
 
     ```sh
     ssh-keygen -t ed25519 -C "youremail@example.com"
+    ```
+
+    and then
+
+    ```sh
     eval "$(ssh-agent -s)"
     touch ~/.ssh/config
     echo "Host *
@@ -25,7 +30,7 @@
       UseKeychain yes
       IdentityFile ~/.ssh/id_ed25519
     " >> ~/.ssh/config
-    ssh-add -K ~/.ssh/id_ed25519
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519
     pbcopy < ~/.ssh/id_ed25519.pub
     ```
 
