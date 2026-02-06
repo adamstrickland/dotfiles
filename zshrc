@@ -173,3 +173,5 @@ source ~/.zshrc.user
 if [[ ! -z "$DEBUGZSH" ]]; then
   zprof
 fi
+
+. "$HOME/.local/share/../bin/env"

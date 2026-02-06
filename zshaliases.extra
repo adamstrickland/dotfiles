@@ -64,3 +64,4 @@ alias mux=tmuxinator
 
 alias uuid="ruby -r securerandom -e 'puts SecureRandom.uuid'"
 
+alias pre-commit="PATH=\"/Users/adamstrickland/.asdf/installs/python/3.11.13/bin:\$PATH\" pre-commit"
