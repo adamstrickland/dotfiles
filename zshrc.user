@@ -1,8 +1,8 @@
 setopt extendedglob
 
-export ASDF_GOLANG_MOD_VERSION_ENABLED=true
-export ASDF_HOME=$HOME/.asdf
-export ASDF_PATH=$ASDF_HOME
+# export ASDF_GOLANG_MOD_VERSION_ENABLED=true
+# export ASDF_HOME=$HOME/.asdf
+# export ASDF_PATH=$ASDF_HOME
 
 # export BREW_HOME_ARM64=/opt/homebrew
 # export BREW_HOME_I386=/usr/local
@@ -25,8 +25,9 @@ export OPENSSL_CFLAGS=-Wno-error=implicit-function-declaration
 source ~/.zshfunctions
 source ~/.zshaliases
 
-source $(brew --prefix asdf)/libexec/asdf.sh
+# source $(brew --prefix asdf)/libexec/asdf.sh
 # source $HOME/.asdf/completions/asdf.bash
+eval "$(mise activate zsh)"
 
 export PATH=~/go/bin:$PATH
 

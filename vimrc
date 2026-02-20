@@ -17,4 +17,4 @@ source ~/.vim/config/autogroups.vim
 
 colorscheme dracula
 
-source ~/.vimrc.local
+silent! source ~/.vimrc.local

@@ -1,9 +1,8 @@
 elasticsearch 5.6.4
-nodejs 22.1.0
+nodejs 24.9.0
 postgres 15.1
 redis 4.0.11
-ruby 3.2.0
+ruby 3.4.6
 java openjdk-19
-golang 1.24.2
+golang 1.25.1
 opentofu 1.8.5
-python system
